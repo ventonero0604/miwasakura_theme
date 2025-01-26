@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}" dir="ltr">
+  <head>
+    <!-- Blockshop theme - Version 10.3.0 by Troop Themes - https://troopthemes.com/ -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    <title>
+      {{ page_title }}
+      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    </title>
+
+    {%- if canonical_url != blank -%}
+      <link rel="canonical" href="{{ canonical_url }}">
+    {%- endif -%}
+
+    {%- if settings.favicon != blank -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32 }}" type="image/png">
+      <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
+    {%- endif -%}
+
+    {%- liquid
+      render 'preload'
+      render 'meta-tags'
+      render 'css-typography'
+      render 'css-variables'
+      render 'custom-styles'
+    -%}
+
+    {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ content_for_header }}
+    {%- render 'routes' -%}
+
+    {%- if request.page_type contains 'customers' -%}
+      <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer></script>
+      <script src="{{ 'customer_area.js' | shopify_asset_url }}" defer></script>
+    {%- endif -%}
+
+    <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
+  </head>
+
+  <body
+    class="template--{{ template | split: '.' | first | remove: '_' | replace: '/', '--' }}"
+    data-theme-id="606"
+    data-theme-name="Blockshop"
+    data-theme-version="10.3.0"
+    data-theme-preset="{{ settings.preset }}"
+    data-transition-container="viewport"
+    data-logged-in="{% if customer %}true{% else %}false{% endif %}"
+    {% if settings.border--enabled %}
+      data-show-border
+    {% endif %}
+  >
+    <!--[if IE]>
+      <div style="text-align:center;padding:72px 16px;">
+        {{ 'general.browser_unsupported' | t }}
+      </div>
+      <style>
+        .layout--viewport { display: none; }
+      </style>
+    <![endif]-->
+
+    <a data-item="a11y-button" href='#main_content' id="a11y_skip">
+      {{- 'general.a11y.skip_main' | t -}}
+    </a>
+
+    <div class="layout--viewport" data-drawer-status="closed">
+      <div class="layout--main-content">
+        {%- sections 'header-group' -%}
+        {%- sections 'overlay-group' -%}
+
+        <main class="layout--template" id="main_content">
+          {{ content_for_layout }}
+        </main>
+
+        {%- sections 'footer-group' -%}
+      </div>
+
+      {%- liquid
+        render 'drawer'
+        render 'layout--navigation'
+        render 'feedback-bar'
+      -%}
+    </div>
+
+    {%- render 'icons', icon: 'defs' -%}
+  </body>
+</html>

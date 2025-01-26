@@ -1,0 +1,85 @@
+{% comment %}
+  Accepts:
+    "block" HTML block to render in the carousel
+{% endcomment %}
+
+{% liquid
+  assign blocks_per_slide_mobile = blocks_per_slide_mobile | plus: 0
+  assign blocks_per_slide_float = blocks_per_slide | append: ".00"
+  assign blocks_per_slide_float_mobile = blocks_per_slide_mobile | append: ".00"
+  assign total_slides = total_blocks | divided_by: blocks_per_slide_float | ceil
+  assign total_slides_mobile = total_blocks | divided_by: blocks_per_slide_float_mobile | ceil
+  assign total_spaces = blocks_per_slide | times: total_slides
+  assign total_spaces_mobile = blocks_per_slide_mobile | times: total_slides_mobile
+  assign vacant_spaces = total_spaces | minus: total_blocks
+  assign vacant_spaces_mobile = total_spaces_mobile | minus: total_blocks
+
+  capture css_vars
+    echo '--blocks-per-slide:' | append: blocks_per_slide | append: ';'
+    echo '--blocks-per-slide-mobile:' | append: blocks_per_slide_mobile | append: ';'
+    echo '--total-slides:' | append: total_slides | append: ';'
+    echo '--total-slides-mobile:' | append: total_slides_mobile | append: ';'
+    echo '--total-spaces:' | append: total_spaces | append: ';'
+    echo '--total-spaces-mobile:' | append: total_spaces_mobile | append: ';'
+  endcapture
+%}
+
+<carousel-element
+  class="carousel--root"
+  data-at-end="false"
+  data-at-start="true"
+  data-columns="{{ blocks_per_slide }}"
+  data-mobile-only="{{ mobile_only }}"
+  data-mobile-columns="{{ blocks_per_slide_mobile }}"
+  data-dot-nav="true"
+  data-spacing-around-blocks="true"
+  data-transition-type="slide"
+  style="{{ css_vars }}"
+>
+  <div class="carousel--wrapper">
+    <div class="carousel--container">
+      {%- for block in blocks limit: total_blocks -%}
+        <div
+          class="carousel--block"
+          data-id="{{ section.id | append: '--block-' | append: forloop.index }}"
+        >
+          {{- block -}}
+        </div>
+      {%- endfor -%}
+
+      {%- for i in (1..vacant_spaces) -%}
+        <div class="carousel--block-empty" data-cq="medium-large"></div>
+      {%- endfor -%}
+
+      {%- for i in (1..vacant_spaces_mobile) -%}
+        <div class="carousel--block-empty" data-cq="small"></div>
+      {%- endfor -%}
+    </div>
+
+    <div class="carousel--dot-container" data-cq="small">
+      <div class="carousel--dot-nav"></div>
+    </div>
+
+    {%- unless arrows_enabled == false or total_slides == 1 or mobile_only == true -%}
+      <button
+        class="carousel--prev"
+        aria-label="{{ 'general.a11y.previous' | t }}"
+        aria-hidden="true"
+      >
+        {%- render 'css-icons', icon: 'prev' -%}
+      </button>
+
+      <button
+        class="carousel--next"
+        aria-label="{{ 'general.a11y.next' | t }}"
+        aria-hidden="true"
+      >
+        {%- render 'css-icons', icon: 'next' -%}
+      </button>
+    {%- endunless -%}
+  </div>
+
+  <script type="text/plain">
+    {%- render 'icons', icon: 'circle' -%}
+  </script>
+</carousel-element>

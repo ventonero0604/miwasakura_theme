@@ -1,0 +1,98 @@
+{% comment %}
+  desktop blocks = mobile blocks in this carousel instance
+{% endcomment %}
+
+{%- liquid
+  assign total_slides = 4
+  if product.media.size > 0
+    assign total_slides = product.media.size
+  endif
+
+  capture css_vars
+    echo '--total-slides:' | append: total_slides | append: ';'
+    echo '--total-slides-mobile:' | append: total_slides | append: ';'
+    echo '--total-spaces:' | append: total_slides | append: ';'
+    echo '--total-spaces-mobile:' | append: total_slides | append: ';'
+  endcapture
+-%}
+
+<main-product-carousel
+  class="carousel--root"
+  data-id="{{ product_id }}"
+  data-at-end="false"
+  data-at-start="true"
+  data-auto-rotate="false"
+  data-columns="1"
+  data-mobile-columns="1"
+  data-dot-nav="true"
+  data-spacing-around-blocks="true"
+  data-transition-type="slide"
+  style="{{ css_vars }}"
+>
+  <div class="carousel--wrapper">
+    <div class="carousel--container">
+      {%- if product.media.size == 0 -%}
+        {%- for i in (1..total_slides) -%}
+          <div
+            class="carousel--block"
+            data-id="{{ section.id | append: '--block-' | append: forloop.index }}"
+          >
+            {%- render 'placeholder', type: 'product', placeholder_index: i -%}
+          </div>
+        {%- endfor -%}
+
+      {%- else -%}
+        {%- liquid
+          assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media
+          if product.has_only_default_variant
+            assign featured_media = product.media[0]
+          endif
+        -%}
+
+        {%- for block in product.media limit: total_slides -%}
+          {%- liquid
+            assign loading = 'lazy'
+            if forloop.index <= blocks_per_slide and section.index < 3
+              assign loading = 'eager'
+            endif
+
+            assign fetchpriority = 'auto'
+            if forloop.index <= blocks_per_slide and section.index == 1
+              assign fetchpriority = 'high'
+            endif
+          -%}
+
+          <div
+            class="carousel--block"
+            data-id="{{ section.id | append: '--block-' | append: forloop.index }}"
+          >
+            {%- liquid
+              assign media_active = false
+              if block.id == featured_media.id
+                assign media_active = true
+              endif
+            -%}
+
+            {%-
+              render 'product-media',
+              product: product,
+              product_media: block,
+              media_active: media_active,
+              video_looping_enabled: video_looping_enabled,
+              media_size: 'mobile',
+              loading: loading
+            -%}
+          </div>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+
+    <div class="carousel--dot-container">
+      <div class="carousel--dot-nav"></div>
+    </div>
+  </div>
+
+  <script type="text/plain">
+    {%- render 'icons', icon: 'circle' -%}
+  </script>
+</main-product-carousel>
