@@ -44,52 +44,1493 @@
     {%- endif -%}
 
     <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/anim.css?v=1737877275"
+      type="text/css"
+    >
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="https://d2w53g1q050m78.cloudfront.net/miwasakurame/uploads/themes/develop_20241023_20241023163746/ec_force/assets/theme_customize.css?v=20250126121413"
+    >
+    <script
+      src="/assets/shop/shared/slideshow-ae7ee5520e71c1e0821fe08c772485d4e540bcedf28e192cc2331ebcd8b1fda0.js"
+    ></script>
+    <script
+      src="/assets/shop/shared/slick-69ece673c15e85186d6c7c0f7b2af20edbb70b2714a98b78f947cf369a0d9bb0.js"
+    ></script>
+    <script
+      src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/jquery.ripples-min.js?v=1737877275"
+    ></script>
+    <script
+      src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/anim.js?v=1737877275"
+    ></script>
   </head>
 
-  <body
-    class="template--{{ template | split: '.' | first | remove: '_' | replace: '/', '--' }}"
-    data-theme-id="606"
-    data-theme-name="Blockshop"
-    data-theme-version="10.3.0"
-    data-theme-preset="{{ settings.preset }}"
-    data-transition-container="viewport"
-    data-logged-in="{% if customer %}true{% else %}false{% endif %}"
-    {% if settings.border--enabled %}
-      data-show-border
-    {% endif %}
-  >
-    <!--[if IE]>
-      <div style="text-align:center;padding:72px 16px;">
-        {{ 'general.browser_unsupported' | t }}
+  {%- if request.page_type == 'index' -%}
+    <body>
+      <!-- トップページ用のコンテンツ -->
+      <div class="layout--viewport" data-drawer-status="closed">
+        <div class="layout--main-content">
+          {%- sections 'header-group' -%}
+          {%- sections 'overlay-group' -%}
+
+          <main class="l-container js-main-container" role="main" id="add_product_async_view">
+            <div id="cart-addition-failure" class="p-product_alert" style="display:none;">
+              <div class="control-alert alert-danger">
+                <div class="text u-color__bg--bg u-color__text--alert">
+                  <div>
+                    <p id="addition-failure-message"></p>
+                    <p
+                      id="btn-show-addition-failure-details"
+                      class="p-product_alert__details_show_btn"
+                      style="display:none;"
+                    >
+                      さらに詳しく
+                    </p>
+                  </div>
+
+                  <div>
+                    <p id="addition-failure-details" class="p-product_alert__details" style="display:none;"></p>
+                    <p
+                      id="btn-hide-addition-failure-details"
+                      class="p-product_alert__details_hide_btn"
+                      style="display:none;"
+                    >
+                      閉じる
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link
+              href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap"
+              rel="stylesheet"
+            >
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+            <script
+              type="module"
+              crossorigin
+              src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/main.js?v=1737864272"
+            ></script>
+            <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/style.css?v=1737864262">
+            <script
+              src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/jquery.ripples-min.js?v=1737877275"
+            ></script>
+            <script
+              src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/anim.js?v=1737877275"
+            ></script>
+
+            <style>
+              @font-face {
+                font-family: 'icon';
+                src: url('https://cdn.shopify.com/s/files/1/0737/6935/3452/files/icon.eot?v=1737878928');
+                src: url('https://cdn.shopify.com/s/files/1/0737/6935/3452/files/icon.eot?v=1737878928') format('embedded-opentype'),
+                  url('https://cdn.shopify.com/s/files/1/0737/6935/3452/files/icon.ttf?v=1737878929b') format('truetype'), url('./icons/icon.woff?qlbxbb') format('woff'),
+                font-weight: normal;
+                font-style: normal;
+                font-display: block;
+              }
+              .l-footer {
+                display: none;
+              }
+              .Top .l-footer {
+                display: flex;
+              }
+              .u-text--btn,
+              .u-text--btn--overlay {
+                border-radius: 100vh;
+                text-align: center;
+              }
+              .p-signup {
+                padding-top: 350px;
+                padding-bottom: 60px;
+              }
+              .Topics .u-margin__top--80 {
+                margin-top: 40px;
+              }
+
+              .Topics .p-news__inner__title {
+                display: none;
+              }
+
+              .Topics .p-news {
+                padding-right: 0.9389671362vw;
+                padding-left: 0.9389671362vw;
+              }
+              .l-header {
+                background: none !important;
+                border-bottom: unset;
+              }
+              .l-header__inner {
+                background: rgba(255, 255, 255, 0.7);
+                border-radius: 0px 0px 20px 20px;
+                height: 54px;
+                i {
+                  color: #eb7284 !important;
+                }
+              }
+              .l-footer__info__store__sns {
+                display: flex;
+                align-items: center;
+              }
+              .icon_x {
+                width: 16px;
+                margin-top: -4px;
+              }
+              @media screen and (max-width: 719px) {
+                .c-announce_bar__text {
+                  text-align: center;
+                }
+              }
+            </style>
+
+            <div class="Top">
+              <div class="Main">
+                <div class="Background">
+                  <nav class="Navi">
+                    <h1 class="logo">
+                      <a href="/">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/navi_logo.svg?v=1732570389"
+                          alt="みわさくら"
+                        >
+                      </a>
+                    </h1>
+                    <ul class="list">
+                      <li>
+                        <a href="/collections/all">ALL ITEM</a>
+                      </li>
+                      <li>
+                        <a href="collections/酒">SAKE</a>
+                      </li>
+                      <li>
+                        <a href="collections/frontpage">GOODS</a>
+                      </li>
+                      <li>
+                        <a href="collections/セット">SET</a>
+                      </li>
+                      <li>
+                        <a href="{{ routes.account_login_url }}">SIGN UP</a>
+                      </li>
+                      <!-- <li> -->
+                      <!-- <a href="/">ABOUT</a> -->
+                      <!-- </li> -->
+                    </ul>
+                    <ul class="sns">
+                      <li>
+                        <a
+                          href="https://www.instagram.com/miwasakura.me/"
+                          class="insta"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/navi_insta.svg?v=1737864248"
+                            alt="instagram"
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/miwasakura_me" class="x" target="_blank" rel="noopener noreferrer">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/navi_x.svg?v=1737864247"
+                            alt="x"
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://lin.ee/OBS2Cvp" class="line" target="_blank" rel="noopener noreferrer">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/navi_line.svg?v=1737864248"
+                            alt="line"
+                        ></a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div class="Container">
+                  <section class="Kv">
+                    <div class="Kv__movie">
+                      <video
+                        src="https://site.miwasakura.me/uploads/kv_fin.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      ></video>
+                    </div>
+                    <div class="content">
+                      {% comment %}
+                        <figure class="image">
+                          <img src="{{ 'kv.png' | asset_url }}" alt="">
+                        </figure>
+                      {% endcomment %}
+                      <div class="text">
+                        {% comment %}
+                          <h2 class="title">
+                            <span class="text1">二口目からおいしい</span>
+                            <span class="text2">くらくらする酔ゑ体験</span>
+                            <span class="text3">あとはお好きなように</span>
+                          </h2>
+                        {% endcomment %}
+                        <ul class="sns">
+                          <li>
+                            <a href="https://www.instagram.com/miwasakura.me/" target="_blank">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/ico_instagram.svg?v=1737864247"
+                                alt="instagram"
+                              >
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/miwasakura_me" target="_blank">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/ico_x.svg?v=1737864247"
+                                alt="X"
+                              >
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://lin.ee/OBS2Cvp" target="_blank">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/ico_line.svg?v=1737864247"
+                                alt="LINE"
+                              >
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="Lead">
+                    <h2 class="title">
+                      <span class="fadeIn"> ホンモノの日本酒は、</span>
+                      <span class="fadeIn"> 黄金色で濃い。</span>
+                    </h2>
+                    <figure>
+                      <a href="/products/みわさくら-純米酒"
+                        ><img
+                          src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/img_lead_1.png?v=1737864248"
+                          alt=""
+                      ></a>
+                    </figure>
+                    <h2 class="title fadeIn">米から違う、みわさくら。</h2>
+                    <p class="text fadeIn">
+                      ここは自然豊かな地、広島県三次市三和町。<br>
+                      酒造好適米「八反錦」のふるさとの地で、<br>
+                      蔵元と杜氏自ら稲を植え、米づくりからこだわります。
+                    </p>
+                    <figure class="fadeIn">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/img_lead_2.png?v=1737864248"
+                        alt=""
+                      >
+                    </figure>
+                    <div class="Marquee Marquee-pink">
+                      <div class="inner">Fall in love with Sake.</div>
+                      <div class="inner" aria-hidden="true">Fall in love with Sake.</div>
+                    </div>
+                  </section>
+                  <style>
+                    .Product {
+                      height: 136vw;
+                    }
+                    .Product .button {
+                      width: 100%;
+                    }
+                    .Product .wrapper .buttons .small {
+                      text-align: center;
+                    }
+                    .Product .youtube {
+                      margin-top: 1.5vw;
+                      position: relative;
+                      padding-bottom: 100%;
+                      height: 0;
+                      overflow: hidden;
+                    }
+                    .youtube iframe {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                    }
+                    @media screen and (max-width: 768px) {
+                      .Product {
+                        height: 595vw;
+                      }
+                      .Product .youtube {
+                        margin-top: 5.5vw;
+                      }
+                    }
+                  </style>
+                  <section class="Product">
+                    <figure class="title">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/ttl_product.svg?v=1737864248"
+                        alt=""
+                      >
+                    </figure>
+                    <h3 class="category"><span>SAKE</span></h3>
+
+                    <div class="wrapper">
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="item swiper-slide">
+                            <div class="contents">
+                              <figure class="item_image">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/img_product_1.png?v=1737864249"
+                                  alt="みわさくら純米酒"
+                                >
+                              </figure>
+                              <div class="item_texts">
+                                <p class="item_info">WEB限定3000本</p>
+                                <p class="item_subtitle">くらくら初濃いの味</p>
+                                <p class="item_title">みわさくら 純米酒</p>
+                                <p class="item_text">
+                                  三和町産の八反錦100%使用。聖なる山、大土山の伏流水で醸した"ド直球"純米酒。酒臭くない、<br>
+                                  ずっと旨口。
+                                </p>
+                                <p class="item_small">
+                                  アルコール分：15度<br>
+                                  原材料名：米、米麹<br>
+                                  容量：720ml<br>
+                                  LINEクーポン対象商品
+                                </p>
+                                <div class="item_price_wrapper">
+                                  <div class="item_price">
+                                    <p class="type">単品</p>
+                                    <p class="detail"><span>¥1,991(税込¥2,190)</span></p>
+                                  </div>
+                                  <!--
+                                    <div class="item_price">
+                                      <p class="type">定期便</p>
+                                      <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p>
+                                    </div>
+                                  -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="buttons">
+                              <div class="buttons_wrapper">
+                                <a href="/collections/all/products/みわさくら-純米酒" class="black button">商品詳細</a>
+                                <button
+                                  class="btn-add-async black button"
+                                  data-variant-id="45942969336044"
+                                  data-quantity="1"
+                                >
+                                  カートに追加
+                                </button>
+                              </div>
+                              <a
+                                href="{{ shop.url }}/cart/45942969336044:1?channel=buy_button"
+                                class="red button"
+                                >購入する</a
+                              >
+                              <small class="small">※Amazonペイ利用できます。</small>
+                              <a href="https://item.rakuten.co.jp/miwasakura/miwasakura_720/" class="pink button"
+                                >楽天で購入する</a
+                              >
+                            </div>
+                          </div>
+                          <!-- <div class="item swiper-slide"> -->
+                          <!-- <div class="contents"> -->
+                          <!-- <figure class="item_image"> -->
+                          <!-- <img src="{{ 'img_product_2.png' | asset_url }}" alt=""> -->
+                          <!-- </figure> -->
+                          <!-- <div class="item_texts"> -->
+                          <!-- <p class="item_info">セットでお得</p> -->
+                          <!-- <p class="item_subtitle">くらくらする初濃いの味</p> -->
+                          <!-- <p class="item_title">のんべぇセット</p> -->
+                          <!-- <p class="item_text"> -->
+                          <!-- みわさくら1本とオリジナルグッズのお猪口2つ、徳利1つがついているセットです。<br> -->
+                          <!-- 最高の酔ゑ体験を楽しめます。 -->
+                          <!-- </p> -->
+                          <!-- <p class="item_small"> -->
+                          <!-- アルコール分：15度<br> -->
+                          <!-- 原材料名：米、米麹 -->
+                          <!-- </p> -->
+                          <!-- <div class="item_price_wrapper"> -->
+                          <!-- <div class="item_price"> -->
+                          <!-- <p class="type">セット</p> -->
+                          <!-- <p class="detail">¥5540円(税込)</p> -->
+                          <!-- </div> -->
+                          <!-- <div class="item_price"> -->
+                          <!-- <p class="type">定期便</p> -->
+                          <!-- <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p> -->
+                          <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- <div class="buttons"> -->
+                          <!-- <div class="buttons_wrapper"> -->
+                          <!-- <a href="/" class="black button">商品詳細</a> -->
+                          <!-- <a href="/" class="black button">カートに追加</a> -->
+                          <!-- </div> -->
+                          <!-- <a href="/" class="red button">購入する</a> -->
+                          <!-- <a href="/" class="pink button">楽天で購入する</a> -->
+                          <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- <div class="item swiper-slide"> -->
+                          <!-- <div class="contents"> -->
+                          <!-- <figure class="item_image"> -->
+                          <!-- <img src="{{ 'img_product_3.png' | asset_url }}" alt=""> -->
+                          <!-- </figure> -->
+                          <!-- <div class="item_texts"> -->
+                          <!-- <p class="item_info">セットでお得</p> -->
+                          <!-- <p class="item_subtitle">くらくらする初濃いの味</p> -->
+                          <!-- <p class="item_title">のんべぇセット</p> -->
+                          <!-- <p class="item_text"> -->
+                          <!-- みわさくら1本とオリジナルグッズのお猪口1つ、徳利1つがついているセットです。<br> -->
+                          <!-- 最高の酔ゑ体験を楽しめます。 -->
+                          <!-- </p> -->
+                          <!-- <p class="item_small"> -->
+                          <!-- アルコール分：15度<br> -->
+                          <!-- 原材料名：米、米麹 -->
+                          <!-- </p> -->
+                          <!-- <div class="item_price_wrapper"> -->
+                          <!-- <div class="item_price"> -->
+                          <!-- <p class="type">セット</p> -->
+                          <!-- <p class="detail">¥4689円(税込)</p> -->
+                          <!-- </div> -->
+                          <!-- <div class="item_price"> -->
+                          <!-- <p class="type">定期便</p> -->
+                          <!-- <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p> -->
+                          <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- </div> -->
+                          <!-- <div class="buttons"> -->
+                          <!-- <div class="buttons_wrapper"> -->
+                          <!-- <a href="/" class="black button">商品詳細</a> -->
+                          <!-- <a href="/" class="black button">カートに追加</a> -->
+                          <!-- </div> -->
+                          <!-- <a href="/" class="red button">購入する</a> -->
+                          <!-- <a href="/" class="pink button">楽天で購入する</a> -->
+                          <!-- </div> -->
+                          <!-- </div> -->
+                          <div class="item swiper-slide">
+                            <div class="contents">
+                              <figure class="item_image">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/img_product_2.png?v=1737864248"
+                                  alt="みわさくら3本セット"
+                                >
+                              </figure>
+                              <div class="item_texts">
+                                <p class="item_info">友達と一緒に！</p>
+                                <p class="item_subtitle">くらくらする初濃いの味</p>
+                                <p class="item_title">みわさくら 3本</p>
+                                <p class="item_text">
+                                  １本じゃ物足りない！1回分の送料で友人や知人とシェアしたい。そんな節約上手なあなたにおすすめのセットです。
+                                </p>
+                                <p class="item_small">
+                                  アルコール分：15度<br>
+                                  原材料名：米、米麹<br>
+                                  容量：720ml<br>
+                                  LINEクーポン対象商品
+                                </p>
+                                <div class="item_price_wrapper">
+                                  <div class="item_price">
+                                    <p class="type">3本</p>
+                                    <p class="detail">¥5,973(税込¥6,570)</p>
+                                  </div>
+                                  <!--
+                                    <div class="item_price">
+                                      <p class="type">定期便</p>
+                                      <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p>
+                                    </div>
+                                  -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="buttons">
+                              <div class="buttons_wrapper">
+                                <a href="/products/みわさくら-純米酒-3本セット" class="black button">商品詳細</a>
+                                <button
+                                  class="btn-add-async black button"
+                                  data-variant-id="45943131668716"
+                                  data-quantity="1"
+                                >
+                                  カートに追加
+                                </button>
+                              </div>
+                              <a href="{{ shop.url }}/cart/45943131668716:1?channel=buy_button" class="red button"
+                                >購入する</a
+                              >
+                              <small class="small">※Amazonペイ利用できます。</small>
+                              <a href="https://item.rakuten.co.jp/miwasakura/miwasakura_720k_003/" class="pink button"
+                                >楽天で購入する</a
+                              >
+                            </div>
+                          </div>
+                          <div class="item swiper-slide">
+                            <div class="contents">
+                              <figure class="item_image">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/img_product_3.png?v=1737864248"
+                                  alt="化粧箱付きセット"
+                                >
+                              </figure>
+                              <div class="item_texts">
+                                <p class="item_info">化粧箱付き</p>
+                                <p class="item_subtitle">くらくらする初濃いの味</p>
+                                <p class="item_title">みわさくら 純米酒</p>
+                                <p class="item_text">
+                                  大切な方へのギフトにピッタリ。開封する期待感を演出する妖艶な化粧箱付きのセット。保存用にもぜひおすすめ。
+                                </p>
+                                <p class="item_small">
+                                  アルコール分：15度<br>
+                                  原材料名：米、米麹<br>
+                                  容量：720ml<br>
+                                  LINEクーポン対象外
+                                </p>
+                                <div class="item_price_wrapper">
+                                  <div class="item_price">
+                                    <p class="type">1セット</p>
+                                    <p class="detail">¥2,218(税込¥2,440)</p>
+                                  </div>
+                                  <!--
+                                    <div class="item_price">
+                                      <p class="type">定期便</p>
+                                      <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p>
+                                    </div>
+                                  -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="buttons">
+                              <div class="buttons_wrapper">
+                                <a href="/collections/all/products/みわさくら-純米酒-化粧箱付" class="black button"
+                                  >商品詳細</a
+                                >
+                                <button
+                                  class="btn-add-async black button"
+                                  data-variant-id="45943126982892"
+                                  data-quantity="1"
+                                >
+                                  カートに追加
+                                </button>
+                              </div>
+                              <a href="{{ shop.url }}/cart/45943126982892:1?channel=buy_button" class="red button"
+                                >購入する</a
+                              >
+                              <small class="small">※Amazonペイ利用できます。</small>
+                              <a href="https://item.rakuten.co.jp/miwasakura/miwasakura_720k/" class="pink button"
+                                >楽天で購入する</a
+                              >
+                            </div>
+                          </div>
+                          <div class="item swiper-slide">
+                            <div class="contents">
+                              <figure class="item_image">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/img_product_2.png?v=1737864248"
+                                  alt="みわさくら3本セット"
+                                >
+                              </figure>
+                              <div class="item_texts">
+                                <p class="item_info">友達と一緒に！</p>
+                                <p class="item_subtitle">くらくらする初濃いの味</p>
+                                <p class="item_title">みわさくら 3本</p>
+                                <p class="item_text">
+                                  １本じゃ物足りない！1回分の送料で友人や知人とシェアしたい。そんな節約上手なあなたにおすすめのセットです。
+                                </p>
+                                <p class="item_small">
+                                  アルコール分：15度<br>
+                                  原材料名：米、米麹<br>
+                                  容量：720ml<br>
+                                  LINEクーポン対象商品
+                                </p>
+                                <div class="item_price_wrapper">
+                                  <div class="item_price">
+                                    <p class="type">3本</p>
+                                    <p class="detail">¥5,973(税込¥6,570)</p>
+                                  </div>
+                                  <!--
+                                    <div class="item_price">
+                                      <p class="type">定期便</p>
+                                      <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p>
+                                    </div>
+                                  -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="buttons">
+                              <div class="buttons_wrapper">
+                                <a href="/products/みわさくら-純米酒-3本セット" class="black button">商品詳細</a>
+                                <button
+                                  class="btn-add-async black button"
+                                  data-variant-id="45943131668716"
+                                  data-quantity="1"
+                                >
+                                  カートに追加
+                                </button>
+                              </div>
+                              <a href="{{ shop.url }}/cart/45943131668716:1?channel=buy_button" class="red button"
+                                >購入する</a
+                              >
+                              <small class="small">※Amazonペイ利用できます。</small>
+                              <a href="https://item.rakuten.co.jp/miwasakura/miwasakura_720k_003/" class="pink button"
+                                >楽天で購入する</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <h4 class="lead fadeIn">
+                      ～上質な酔ゑ体験をあなたに～<br>
+                      甘くとろけるような酔いの時間をお楽しみください。
+                    </h4>
+                    <figure class="image">
+                      <img
+                        class="fadeIn"
+                        src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/txt_product.svg?v=1737864248"
+                        alt=""
+                      >
+                    </figure>
+
+                    <div class="banner">
+                      <a href="https://www.instagram.com/miwasakura.me/" target="_blank">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/product_bnr_insta.png?v=1736841151"
+                          alt="instagram"
+                        >
+                      </a>
+                      <a href="https://lin.ee/OBS2Cvp" target="_blank">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/product_bnr_line.png?v=1737610664"
+                          alt="LINE"
+                        >
+                      </a>
+                      <a href="https://twitter.com/miwasakura_me" target="_blank">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/product_bnr_x.png?v=1737446296"
+                          alt="X"
+                        >
+                      </a>
+                    </div>
+                    <div class="youtube">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/8XR8PKZRH5Q?autoplay=1&mute=1&controls=0&loop=1&playlist=8XR8PKZRH5Q"
+                        title="みわさくら　くらくらする初濃いの味_正方形バージョン"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </section>
+
+                  <section class="About">
+                    <h3 class="SectionTitle">ABOUT</h3>
+                    <h4 class="SectionTitle_lead">みわさくらの特徴</h4>
+                    <ul class="list">
+                      <li class="item">
+                        <p class="title fadeIn">
+                          <span>01</span>
+                          なぜみわさくらは<br>
+                          <em>黄金色</em>なのか？
+                        </p>
+                        <div class="content">
+                          <figure class="image">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/about_img_1.png?v=1736837962"
+                              alt=""
+                            >
+                          </figure>
+                          <p class="text mr">
+                            黄金色は濃醇さの証。お米を必要以上に磨き上げない70%の精米歩合で、純米の旨味が凝縮された、ありのままの日本酒の味と色を五感で感じてください。
+                          </p>
+                          <a class="link" href="#">
+                            <span>詳細を見る</span>
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/about_ico.svg?v=1737864247"
+                              alt=""
+                            >
+                          </a>
+                        </div>
+                      </li>
+                      <li class="item">
+                        <div class="content">
+                          <figure class="image">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/about_img_2.png?v=1736837983"
+                              alt=""
+                            >
+                          </figure>
+                          <p class="text ml">
+                            蔵元自ら、米作りを手掛け｢より良い品質の酒米、より上質の酒造り」に情熱を傾けています。自社で米を磨き、強い麹を作り、米の旨味を最大限引き出す酒造り。私たちは流行に流されないこだわりの酒造りを貫きます。
+                          </p>
+                          <a class="link ml" href="#">
+                            <span>詳細を見る</span>
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/about_ico.svg?v=1737864247"
+                              alt=""
+                            >
+                          </a>
+                        </div>
+                        <p class="title fadeIn">
+                          <span>02</span>
+                          <em>米からこだわる</em><br>
+                          美和桜酒造
+                        </p>
+                      </li>
+                    </ul>
+                    <div class="full">
+                      <div class="titleWrapper">
+                        <p class="title fadeIn">
+                          <span>03</span>
+                          <em>八反錦</em>の<br>
+                          ふるさと
+                        </p>
+                        <figure>
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/about_img_3.png?v=1737864248"
+                            alt=""
+                          >
+                        </figure>
+                      </div>
+                      <div class="texts">
+                        <p class="text">
+                          地元の土壌で育まれた美田の酒米、聖なる山の伏流水、そして杜氏の和が醸す、風土が共鳴し合い生まれる『みわさくら』はまさに大地の一滴。三和町のテロワールをお楽しみください。
+                        </p>
+                        <a class="link" href="#">
+                          <span>詳細を見る</span>
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/about_ico.svg?v=1737864247"
+                            alt=""
+                          >
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+
+                  <div class="Info">
+                    <section class="Products">
+                      <h3 class="SectionTitle SectionTitle-white">GOODS</h3>
+                      <h4 class="SectionTitle_lead SectionTitle_lead-white">オリジナルグッズ</h4>
+                      <ul class="list">
+                        <li>
+                          <a href="/collections/all/products/アクリルキーホルダー">
+                            <figure class="image">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/goods_img_2.png?v=1737864248"
+                                alt="みわさくらちゃんアクリルキーホルダー"
+                              >
+                            </figure>
+                            <div class="texts">
+                              <p class="subTitle">みわさくらちゃん</p>
+                              <p class="title">キーホルダー</p>
+                              <p class="category">GOODS</p>
+                              <p class="price">¥900(税込¥990)</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/collections/all/products/みわさくらオリジナルtシャツ">
+                            <figure class="image">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/goods_img_1.png?v=1737864248"
+                                alt="みわさくらちゃんTシャツ"
+                              >
+                            </figure>
+                            <div class="texts">
+                              <p class="subTitle">#酔ゑ～</p>
+                              <p class="title">Tシャツ</p>
+                              <p class="category">GOODS</p>
+                              <p class="price">¥3,700(税込¥4,070)</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/collections/all/products/猪口">
+                            <figure class="image">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/goods_img_4.png?v=1737864248"
+                                alt="#酔ゑ〜お猪口"
+                              >
+                            </figure>
+                            <div class="texts">
+                              <p class="subTitle">#酔ゑ〜</p>
+                              <p class="title">お猪口</p>
+                              <p class="category">GOODS</p>
+                              <p class="price">¥800(税込¥880)</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/collections/all/products/オリジナルハンドタオル">
+                            <figure class="image">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/goods_img_3.png?v=1737864248"
+                                alt="#酔ゑ〜ハンドタオル"
+                              >
+                            </figure>
+                            <div class="texts">
+                              <p class="subTitle">みわさくらちゃん</p>
+                              <p class="title">ハンドタオル</p>
+                              <p class="category">GOODS</p>
+                              <p class="price">¥1,000(税込¥1,100)</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <a href="/collections/frontpage" class="button">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/goods_button.svg?v=1737864248"
+                          alt="商品一覧"
+                        >
+                      </a>
+                    </section>
+
+                    <section class="Products">
+                      <h3 class="SectionTitle SectionTitle-white">SET</h3>
+                      <h4 class="SectionTitle_lead SectionTitle_lead-white">セット</h4>
+                      <ul class="list">
+                        <li>
+                          <a href="/collections/セット/products/のんべぇセット2-化粧箱無料-お猪口2つと徳利1つ">
+                            <figure class="image">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/gift_img_1.png?v=1737864248"
+                                alt=""
+                              >
+                            </figure>
+                            <div class="texts">
+                              <p class="subTitle">
+                                お猪口2つと徳利1つ<br>
+                                (化粧箱付)
+                              </p>
+                              <p class="title">のんべぇセット2</p>
+                              <p class="category">SET</p>
+                              <p class="price">¥5,091(税込¥5,600)</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/collections/セット/products/お猪口セット-化粧箱無料-お猪口1つ">
+                            <figure class="image">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/gift_img_2.png?v=1737864248"
+                                alt=""
+                              >
+                            </figure>
+                            <div class="texts">
+                              <p class="subTitle">
+                                お猪口1つと徳利1つ<br>
+                                (化粧箱付)
+                              </p>
+                              <p class="title">のんべセット1</p>
+                              <p class="category">SET</p>
+                              <p class="price">¥4,291(税込¥4,720)</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/collections/セット/products/お猪口セット-化粧箱無料-お猪口1つ-1">
+                            <figure class="image">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/gift_img_3.png?v=1737864248"
+                                alt="お猪口セット"
+                              >
+                            </figure>
+                            <div class="texts">
+                              <p class="subTitle">お猪口1つ(化粧箱付)</p>
+                              <p class="title">お猪口セット</p>
+                              <p class="category">SET</p>
+                              <p class="price">¥2,791(税込¥3,070)</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/collections/酒/products/みわさくら-純米酒-化粧箱付">
+                            <figure class="image">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/gift_img_4.png?v=1737864248"
+                                alt="化粧箱セット"
+                              >
+                            </figure>
+                            <div class="texts">
+                              <p class="subTitle">化粧箱付</p>
+                              <p class="title">化粧箱セット</p>
+                              <p class="category">SET</p>
+                              <p class="price">¥2,218(税込¥2,240円)</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <a href="/collections/セット" class="button">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/goods_button.svg?v=1737864248"
+                          alt="商品一覧"
+                        >
+                      </a>
+                    </section>
+
+                    <section class="Design">
+                      <h3 class="SectionTitle SectionTitle-white">Character</h3>
+                      <h4 class="SectionTitle_lead SectionTitle_lead-white">キャラクターデザイン</h4>
+                      <div class="images fadeIn">
+                        <figure>
+                          <img
+                            class="fadeIn"
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/design_img_1.png?v=1737864248"
+                            alt=""
+                          >
+                        </figure>
+                        <div class="content">
+                          <figure>
+                            <img
+                              class="fadeIn"
+                              src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/design_img_2.png?v=1737864248"
+                              alt=""
+                            >
+                          </figure>
+                          <div class="name fadeIn">
+                            <figure class="text">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/design_name.png?v=1737864248"
+                                alt=""
+                              >
+                            </figure>
+                            <a href="/" class="link">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/design_insta.png?v=1737864248"
+                                alt=""
+                              >
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="texts">
+                        <p>
+                          『みわさくら』は妖怪物語《稲生物怪録》の舞台である広島県三次市で生まれたお酒です。そして、純米酒はアルコール度数の高い、うーんと濃くて美味しいお酒です。
+                          ある人は、あまりの美味しさに知らず知らずのうちに何倍も盃を重ねてしまい、気付けば酔いの沼にどっぷりハマってしまう。「あら嫌だ、また化かされちまったじゃないの…」なんて、そんな不思議な魅力を持つ「みわさくら」を、艶美な妖怪の姿に託してみました。
+                        </p>
+                        <p>
+                          ラベルは日本酒の「二口目のおいしさ」を表現した2層式のシール構造となっています。「化けの皮をはがす♥」と書かれた1層目のシールをめくると、「ぬる燗で楽しむ」「食事とのペアリングを楽しむ」「三次市のテロワール」といったシークレットラベルが現れます。
+                        </p>
+                        <figure class="text">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/design_img_3.png?v=1736928166"
+                            alt=""
+                          >
+                        </figure>
+                        <p>
+                          <b>キャラクターデザイン</b><br>
+                          広島県在住のイラストレーターaya.mさん。
+                          シンプルでキュートなタッチが多くの女性ファンに支持され「街で見かけたおしゃれさん」がInstagramで注目を集めています。
+                        </p>
+                      </div>
+                    </section>
+                    <figure class="fadeIn imageText">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/info_bg_txt.svg?v=1737864248"
+                        alt="酔ゑ〜"
+                      >
+                    </figure>
+                  </div>
+
+                  <section class="Media">
+                    <div class="insta">
+                      <figure class="subTitle">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/media_insta.svg?v=1737864247"
+                          alt="instagram"
+                        >
+                      </figure>
+                      <h3 class="title">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/media_insta_title.svg?v=1737864248"
+                          alt="魅せて！#酔ゑ〜体験"
+                        >
+                      </h3>
+                      <ul class="tags">
+                        <li>
+                          <a
+                            href="https://www.instagram.com/explore/tags/%E9%85%94%E3%82%91/"
+                            class="tag"
+                            target="_blank"
+                            >#酔ゑ</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/explore/tags/%E3%81%BF%E3%82%8F%E3%81%95%E3%81%8F%E3%82%89/"
+                            class="tag"
+                            target="_blank"
+                            >#みわさくら</a
+                          >
+                        </li>
+                      </ul>
+                      <figure class="image">
+                        <img src="{{ 'media_insta_img.png' | asset_url }}" alt="">
+                      </figure>
+                      <a href="https://www.instagram.com/miwasakura.me/" class="button" target="_blank">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/media_button_follow.png?v=1737864248"
+                          alt="Follow Us"
+                        >
+                      </a>
+                    </div>
+                    <div class="Marquee Marquee-pink">
+                      <div class="inner">@miwasakura</div>
+                      <div class="inner" aria-hidden="true">@miwasakura</div>
+                    </div>
+                    <div class="media">
+                      <h3 class="SectionTitle SectionTitle-gray">Media</h3>
+                      <h4 class="SectionTitle_lead SectionTitle_lead-gray">メディア掲載</h4>
+                      <div class="item">
+                        <figure class="image">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/media_img_1.png?v=1737606059"
+                            alt="Pococe 2024年4月 Issue249"
+                          >
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/media_title_1.png?v=1737864248"
+                            alt="Pococe"
+                          >
+                        </figure>
+                        <p class="text">
+                          2024年4月 Issue249<br>
+                          <span
+                            >心機一転！春から始める、<br>
+                            私の新習慣</span
+                          >
+                        </p>
+                      </div>
+                      <div class="item">
+                        <figure class="image">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/media_img_2.png?v=1737606073"
+                            alt="Mash The Radio"
+                          >
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/media_title_2.png?v=1737864248"
+                            alt="HFM"
+                          >
+                        </figure>
+                        <p class="text">
+                          2024年5月<br>
+                          (広島FM)Mash The Radioに<br>
+                          aya.mさんと出演させていただきました。
+                        </p>
+                      </div>
+                      <div class="item">
+                        <figure class="image">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/media_img_3.png?v=1737606088"
+                            alt="J-WAVE 81.3FM"
+                          >
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/media_title_3.png?v=1737864248"
+                            alt="STEP ONE"
+                          >
+                        </figure>
+                        <p class="text">
+                          2024年5月<br>
+                          J-WAVE 81.3FM STEP ONEに出演させていただきました。
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <style>
+                    .c-news_item__inner {
+                      flex-direction: column;
+                    }
+                    .c-news_item__inner__title {
+                      margin-top: 5px;
+                      padding-left: 0 !important;
+                    }
+                  </style>
+
+                  <section class="Topics">
+                    <div class="wrapper">
+                      <h3 class="title">News<span>お知らせ</span></h3>
+
+                      <div class="l-container__row u-margin__top--80" style="padding-bottom: 60px;">
+                        <div class="p-news">
+                          <div class="p-news__inner">
+                            <header class="p-news__inner__title">
+                              <h2 class="p-news__inner__title__en u-text--head">NEWS</h2>
+                              <span class="p-news__inner__title__jp u-text--subhead">お知らせ</span>
+                            </header>
+                            <div class="p-news__inner__list">
+                              <article class="c-news_item u-color__border--border" id="news_1">
+                                <a class="c-news_item__inner" href="/shop/information/news">
+                                  <time class="c-news_item__inner__date u-text--subhead">2024.12.28</time>
+                                  <div class="c-news_item__inner__title u-text--subhead">
+                                    年末年始の営業に関するご案内
+                                  </div>
+                                </a>
+                              </article>
+
+                              <article class="c-news_item u-color__border--border" id="news_2">
+                                <a class="c-news_item__inner" href="/shop/information/miyajima">
+                                  <time class="c-news_item__inner__date u-text--subhead">2024.12.25</time>
+                                  <div class="c-news_item__inner__title u-text--subhead">
+                                    POP UP STORE 店頭無料試飲会 in 宮島
+                                  </div>
+                                </a>
+                              </article>
+
+                              <article class="c-news_item u-color__border--border" id="news_3">
+                                <a class="c-news_item__inner" href="/shop/information/present-1022">
+                                  <time class="c-news_item__inner__date u-text--subhead">2024.10.29</time>
+                                  <div class="c-news_item__inner__title u-text--subhead">プレゼント企画！</div>
+                                </a>
+                              </article>
+
+                              <article class="c-news_item u-color__border--border" id="news_4">
+                                <a class="c-news_item__inner" href="/shop/information/1012-event">
+                                  <time class="c-news_item__inner__date u-text--subhead">2024.10.18</time>
+                                  <div class="c-news_item__inner__title u-text--subhead">
+                                    10月12日にイベントを開催しました！
+                                  </div>
+                                </a>
+                              </article>
+                            </div>
+
+                            <div class="p-news__inner__more">
+                              <a
+                                class="p-news__inner__more__btn u-text--btn u-color__btn--bg"
+                                href="/shop/information_categories/news"
+                                >もっと見る</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <footer
+                    class="l-footer u-color__border--border footer_bg"
+                    data-section-id="footer"
+                    data-section-type="footer-section"
+                  >
+                    <style>
+                      .footer_bg {
+                        background: #f5f5f5;
+                      }
+
+                      .footer_head {
+                        color: #494949;
+                      }
+
+                      .footer_link {
+                        color: #9a9a9a;
+                      }
+
+                      .footer_body {
+                        color: #9a9a9a;
+                      }
+                    </style>
+                    <div class="l-footer__info">
+                      <div class="l-footer__info__store">
+                        <div class="l-footer__info__store__logo" style="max-width: 150px">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/RackMultipart20240509-18110-1o7usai.png?v=1732569867"
+                            alt="みわさくら"
+                          >
+                        </div>
+                        <div class="l-footer__info__store__sns">
+                          <a
+                            class="l-footer__info__store__sns__item"
+                            href="https://www.facebook.com/miwasakura.me"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                          >
+                            <i class="u-icon--facebook footer_link"></i>
+                          </a>
+
+                          <a
+                            class="l-footer__info__store__sns__item"
+                            href="https://twitter.com/miwasakura_me"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                          >
+                            <img
+                              class="icon_x"
+                              src="https://cdn.shopify.com/s/files/1/0737/6935/3452/files/logo_x.svg?v=1737864248"
+                            >
+                          </a>
+
+                          <a
+                            class="l-footer__info__store__sns__item"
+                            href="https://www.instagram.com/miwasakura.me/"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                          >
+                            <i class="u-icon--instagram footer_link"></i>
+                          </a>
+
+                          <a
+                            class="l-footer__info__store__sns__item"
+                            href="https://lin.ee/OBS2Cvp"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                          >
+                            <i class="u-icon--line footer_link"></i>
+                          </a>
+                        </div>
+                        <div class="u-font--body footer_body">© みわさくら</div>
+                      </div>
+                    </div>
+                    <div class="l-footer__menu u-color__border--border">
+                      <div class="c-footer_menu u-color__border--border">
+                        <div class="c-footer_menu__title u-font--subhead footer_head">CATEGORY</div>
+                        <ul class="c-footer_menu__list">
+                          <li class="c-footer_menu__list__item">
+                            <a
+                              class="c-footer_menu__list__item__inner u-font--body footer_link"
+                              href="/collections/セット"
+                              >SET</a
+                            >
+                          </li>
+
+                          <li class="c-footer_menu__list__item">
+                            <a
+                              class="c-footer_menu__list__item__inner u-font--body footer_link"
+                              href="/collections/酒"
+                              >SAKE</a
+                            >
+                          </li>
+
+                          <li class="c-footer_menu__list__item">
+                            <a
+                              class="c-footer_menu__list__item__inner u-font--body footer_link"
+                              href="collections/frontpage"
+                              >GOODS</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="c-footer_menu u-color__border--border">
+                        <div class="c-footer_menu__title u-font--subhead footer_head">MEMBER</div>
+                        <ul class="c-footer_menu__list">
+                          <li class="c-footer_menu__list__item">
+                            <a
+                              class="c-footer_menu__list__item__inner u-font--body footer_link"
+                              href="{{ routes.account_login_url }}"
+                              >新規会員登録</a
+                            >
+                          </li>
+
+                          <li class="c-footer_menu__list__item">
+                            <a
+                              class="c-footer_menu__list__item__inner u-font--body footer_link"
+                              href="{{ routes.account_login_url }}"
+                              >ログイン</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      {% comment %}
+                        <div class="c-footer_menu u-color__border--border">
+                          <div class="c-footer_menu__title u-font--subhead footer_head">ABOUT</div>
+                          <ul class="c-footer_menu__list">
+                            <li class="c-footer_menu__list__item">
+                              <a class="c-footer_menu__list__item__inner u-font--body footer_link" href="/shop/base_info"
+                                >当サイトについて</a
+                              >
+                            </li>
+
+                            <!-- <li class="c-footer_menu__list__item"> -->
+                            <!-- <a class="c-footer_menu__list__item__inner u-font--body footer_link" -->
+                            <!-- href="#">はったんレシピ</a> -->
+                            <!-- </li> -->
+
+                            <li class="c-footer_menu__list__item">
+                              <a
+                                class="c-footer_menu__list__item__inner u-font--body footer_link"
+                                href="/shop/information"
+                                >お知らせ</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      {% endcomment %}
+
+                      <div class="c-footer_menu u-color__border--border">
+                        <div class="c-footer_menu__title u-font--subhead footer_head">SERVICE</div>
+                        <ul class="c-footer_menu__list">
+                          {% comment %}
+                            <li class="c-footer_menu__list__item">
+                              <a
+                                class="c-footer_menu__list__item__inner u-font--body footer_link"
+                                href="/shop/customer_term"
+                                >利用規約</a
+                              >
+                            </li>
+                          {% endcomment %}
+
+                          <li class="c-footer_menu__list__item">
+                            <a
+                              class="c-footer_menu__list__item__inner u-font--body footer_link"
+                              href="/policies/privacy-policy"
+                              >プライバシーポリシー</a
+                            >
+                          </li>
+
+                          <li class="c-footer_menu__list__item">
+                            <a
+                              class="c-footer_menu__list__item__inner u-font--body footer_link"
+                              href="/pages/tokusyouhou"
+                              >特定商取引法に基づく表記</a
+                            >
+                          </li>
+
+                          <li class="c-footer_menu__list__item">
+                            <a
+                              class="c-footer_menu__list__item__inner u-font--body footer_link"
+                              href="/pages/contact"
+                              >お問い合わせ</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        {%- liquid
+          render 'drawer'
+          render 'layout--navigation'
+          render 'feedback-bar'
+        -%}
       </div>
-      <style>
-        .layout--viewport { display: none; }
-      </style>
-    <![endif]-->
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const buttons = document.querySelectorAll('.btn-add-async');
 
-    <a data-item="a11y-button" href='#main_content' id="a11y_skip">
-      {{- 'general.a11y.skip_main' | t -}}
-    </a>
+          buttons.forEach((button) => {
+            button.addEventListener('click', function (event) {
+              event.preventDefault();
 
-    <div class="layout--viewport" data-drawer-status="closed">
-      <div class="layout--main-content">
-        {%- sections 'header-group' -%}
-        {%- sections 'overlay-group' -%}
+              const variantId = this.getAttribute('data-variant-id');
+              const quantity = this.getAttribute('data-quantity');
 
-        <main class="layout--template" id="main_content">
-          {{ content_for_layout }}
-        </main>
+              fetch('/cart/add.js', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'X-Requested-With': 'XMLHttpRequest',
+                },
+                body: JSON.stringify({
+                  id: variantId,
+                  quantity: quantity,
+                }),
+              })
+                .then((response) => response.json())
+                .then((data) => {
+                  console.log('商品がカートに追加されました:', data);
+                  updateCartCount();
+                })
+                .catch((error) => {
+                  console.error('カートに商品を追加中にエラーが発生しました:', error);
+                });
+            });
+          });
 
-        {%- sections 'footer-group' -%}
+          function updateCartCount() {
+            fetch('/cart.js', {
+              method: 'GET',
+              headers: {
+                'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest',
+              },
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                const cartCount = data.item_count;
+                const cartIcon = document.querySelector('.header--cart');
+                if (cartIcon) {
+                  cartIcon.setAttribute('data-cart-count', cartCount);
+                }
+              })
+              .catch((error) => {
+                console.error('カートの内容を取得中にエラーが発生しました:', error);
+              });
+          }
+        });
+      </script>
+    </body>
+
+  {%- else -%}
+    <!-- トップページ以外のコンテンツ -->
+    <body
+      class="template--{{ template | split: '.' | first | remove: '_' | replace: '/', '--' }}"
+      data-theme-id="606"
+      data-theme-name="Blockshop"
+      data-theme-version="10.3.0"
+      data-theme-preset="{{ settings.preset }}"
+      data-transition-container="viewport"
+      data-logged-in="{% if customer %}true{% else %}false{% endif %}"
+      {% if settings['border--enabled'] %}
+        data-show-border
+      {% endif %}
+    >
+      <!--[if IE]>
+        <div style="text-align:center;padding:72px 16px;">
+          {{ 'general.browser_unsupported' | t }}
+        </div>
+        <style>
+          .layout--viewport { display: none; }
+        </style>
+      <![endif]-->
+
+      <a data-item="a11y-button" href="#main_content" id="a11y_skip">
+        {{- 'general.a11y.skip_main' | t -}}
+      </a>
+
+      <div class="layout--viewport" data-drawer-status="closed">
+        <div class="layout--main-content">
+          {%- sections 'header-group' -%}
+          {%- sections 'overlay-group' -%}
+
+          <main class="layout--template" id="main_content">
+            {{ content_for_layout }}
+          </main>
+
+          {%- sections 'footer-group' -%}
+        </div>
+
+        {%- liquid
+          render 'drawer'
+          render 'layout--navigation'
+          render 'feedback-bar'
+        -%}
       </div>
 
-      {%- liquid
-        render 'drawer'
-        render 'layout--navigation'
-        render 'feedback-bar'
-      -%}
-    </div>
-
-    {%- render 'icons', icon: 'defs' -%}
-  </body>
+      {%- render 'icons', icon: 'defs' -%}
+    </body>
+  {%- endif -%}
 </html>
