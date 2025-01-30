@@ -1,1 +1,155 @@
-{"type":"header","name":"Header Group","sections":{"announcement":{"type":"announcement","blocks":{"announcement":{"type":"announcement","settings":{"icon":"none","text":"Super sale up to 40% off - discount code  BLKFRYD","link":"","hide-on-desktop":false,"hide-on-mobile":false,"page-enabled":false,"page-url":"","countdown-enabled":true,"timer-bg-color":"dark","light-number":true,"expiry-date":"DD-MM-YYYY","expiry-hours":0,"expiry-minutes":0,"hide-when-expired":true}},"announcement_hPr9yL":{"type":"announcement","settings":{"icon":"none","text":"We're passionate about climate change, read about our impact.","link":"","hide-on-desktop":false,"hide-on-mobile":false,"page-enabled":false,"page-url":"","countdown-enabled":false,"timer-bg-color":"dark","light-number":true,"expiry-date":"DD-MM-YYYY","expiry-hours":0,"expiry-minutes":0,"hide-when-expired":true}},"announcement_mN6xn6":{"type":"announcement","settings":{"icon":"none","text":"Just dropped! Shop our latest ... collection","link":"","hide-on-desktop":false,"hide-on-mobile":false,"page-enabled":false,"page-url":"","countdown-enabled":false,"timer-bg-color":"dark","light-number":true,"expiry-date":"DD-MM-YYYY","expiry-hours":0,"expiry-minutes":0,"hide-when-expired":true}},"announcement_hq8R4N":{"type":"announcement","settings":{"icon":"none","text":"We offer free returns, read more about our policies","link":"","hide-on-desktop":false,"hide-on-mobile":false,"page-enabled":false,"page-url":"","countdown-enabled":false,"timer-bg-color":"dark","light-number":true,"expiry-date":"DD-MM-YYYY","expiry-hours":0,"expiry-minutes":0,"hide-when-expired":true}}},"block_order":["announcement","announcement_hPr9yL","announcement_mN6xn6","announcement_hq8R4N"],"settings":{"sticky-enabled":false,"top-border":false,"background-color":"accent-1","white-text":true,"arrows-enabled":true,"rotate-frequency":7,"show-social-icons":true,"show-region-selector":true,"show-locale-selector":true,"scroll-text":true,"animation-speed":3}},"split-announcements":{"type":"split-announcements","blocks":{"store-message-2":{"type":"store-message","settings":{"icon":"none","heading":"","description":"All products are ethically sourced","link-url":"\/"}},"store-message-1":{"type":"store-message","settings":{"icon":"none","heading":"","description":"Free shipping for orders over $80","link-url":"\/"}},"store-message-3":{"type":"store-message","settings":{"icon":"none","heading":"","description":"Return postage included in your parcel","link-url":""}}},"block_order":["store-message-2","store-message-1","store-message-3"],"disabled":true,"settings":{"home-page-only":false,"top-border":false,"background-color":"light","white-text":false,"icon":"none","heading":"Heading","description":"Description","link-url":""}},"header":{"type":"header","blocks":{"blog":{"type":"blog","settings":{"menu-item":"blog","blog":"news","tag-select":"pinned","image-size":"natural","show-cta":false,"show-date":false,"show-excerpt":false}}},"block_order":["blog"],"settings":{"layout":"center-left","background-color":"accent-2","bottom-border":true,"white-text":false,"hover-disabled":false,"sticky-enabled":true,"hide-on-scroll":false,"reduce-height":false,"overlap-behavior":"drawer","logo":"{{ shop.brand.logo }}","logo-height":35,"mobile-logo-height":30,"transparent-enabled":true,"transparent-white-text":true,"menu":"main-menu","search-enabled":true,"icons-enabled":true,"highlight-item":"Sale","highlight-color":"#d02e2e","modal-item":"","modal-content":"","modal-background-color":"none","modal-white-text":false,"show-region-selector":true,"show-locale-selector":true}}},"order":["announcement","split-announcements","header"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "announcement_hq8R4N": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "text": "送料無料キャンペーン中！",
+            "link": "",
+            "hide-on-desktop": false,
+            "hide-on-mobile": false,
+            "page-enabled": false,
+            "page-url": "",
+            "countdown-enabled": false,
+            "timer-bg-color": "dark",
+            "light-number": true,
+            "expiry-date": "DD-MM-YYYY",
+            "expiry-hours": 0,
+            "expiry-minutes": 0,
+            "hide-when-expired": true
+          }
+        }
+      },
+      "block_order": [
+        "announcement_hq8R4N"
+      ],
+      "settings": {
+        "sticky-enabled": true,
+        "top-border": false,
+        "background-color": "accent-2",
+        "white-text": true,
+        "arrows-enabled": true,
+        "rotate-frequency": 7,
+        "show-social-icons": true,
+        "show-region-selector": true,
+        "show-locale-selector": true,
+        "scroll-text": true,
+        "animation-speed": 3
+      }
+    },
+    "split-announcements": {
+      "type": "split-announcements",
+      "blocks": {
+        "store-message-2": {
+          "type": "store-message",
+          "settings": {
+            "icon": "none",
+            "heading": "",
+            "description": "All products are ethically sourced",
+            "link-url": "/"
+          }
+        },
+        "store-message-1": {
+          "type": "store-message",
+          "settings": {
+            "icon": "none",
+            "heading": "",
+            "description": "Free shipping for orders over $80",
+            "link-url": "/"
+          }
+        },
+        "store-message-3": {
+          "type": "store-message",
+          "settings": {
+            "icon": "none",
+            "heading": "",
+            "description": "Return postage included in your parcel",
+            "link-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "store-message-2",
+        "store-message-1",
+        "store-message-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "home-page-only": false,
+        "top-border": false,
+        "background-color": "light",
+        "white-text": false,
+        "icon": "none",
+        "heading": "Heading",
+        "description": "Description",
+        "link-url": ""
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "blog": {
+          "type": "blog",
+          "settings": {
+            "menu-item": "blog",
+            "blog": "news",
+            "tag-select": "pinned",
+            "image-size": "natural",
+            "show-cta": false,
+            "show-date": false,
+            "show-excerpt": false
+          }
+        }
+      },
+      "block_order": [
+        "blog"
+      ],
+      "settings": {
+        "layout": "center-left",
+        "background-color": "none",
+        "bottom-border": true,
+        "white-text": false,
+        "hover-disabled": false,
+        "sticky-enabled": true,
+        "hide-on-scroll": false,
+        "reduce-height": false,
+        "overlap-behavior": "drawer",
+        "logo": "shopify://shop_images/navi_logo_470637f8-d39c-4314-8c77-22b1920c2263.svg",
+        "logo-height": 35,
+        "mobile-logo-height": 35,
+        "transparent-enabled": true,
+        "transparent-white-text": true,
+        "menu": "main-menu",
+        "search-enabled": true,
+        "icons-enabled": true,
+        "highlight-item": "Sale",
+        "highlight-color": "#d02e2e",
+        "modal-item": "",
+        "modal-content": "",
+        "modal-background-color": "none",
+        "modal-white-text": false,
+        "show-region-selector": true,
+        "show-locale-selector": true
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "split-announcements",
+    "header"
+  ]
+}
