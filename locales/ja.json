@@ -294,20 +294,20 @@
       "view_all": "すべて表示"
     },
     "social": {
-      "email": "",
-      "copied": "",
-      "facebook": "",
-      "pinterest": "",
-      "share": "",
-      "x": "",
-      "url": ""
+      "email": "メールで送信",
+      "copied": "リンクがクリップボードにコピーされました",
+      "facebook": "Facebookでシェア",
+      "pinterest": "Pinterestにピン",
+      "share": "シェア",
+      "x": "Xに投稿",
+      "url": "URLをコピー"
     },
     "404": {
-      "intro": "",
-      "home_page_link": "",
-      "page_title": "",
-      "products_link": "",
-      "return_links_html": ""
+      "intro": "申し訳ありませんが、お探しのページは見つかりませんでした。",
+      "home_page_link": "ホームページ",
+      "page_title": "ページが見つかりません",
+      "products_link": "商品",
+      "return_links_html": "私たちの{{ home_page_link }}に戻るか、{{ products_link }}の範囲を表示してください。"
     }
   },
   "layout": {
