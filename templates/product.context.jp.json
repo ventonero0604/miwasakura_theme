@@ -1019,7 +1019,7 @@
       "type": "image-with-text",
       "disabled": false,
       "custom_css": [
-        "h2 {color: #f4899b; letter-spacing: 0.1em; margin-bottom: 1em;}"
+        "h2 {color: #A6845C; letter-spacing: 0.1em; margin-bottom: 1em;}"
       ],
       "settings": {
         "header-932ab4115b478cf9c2fee5e81da9e56e": null,
