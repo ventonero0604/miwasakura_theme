@@ -343,14 +343,14 @@
     }
   },
   "products": {
-    "add_to_cart": "",
-    "change": "",
-    "choose_options": "",
-    "empty_page_content_html": "",
-    "from": "",
+    "add_to_cart": "カートに追加",
+    "change": "変更",
+    "choose_options": "オプションを選択",
+    "empty_page_content_html": "まだページがリンクされていません。これを設定するには、{{ size_chart_path }}ブロックに移動する必要があります。",
+    "from": "から",
     "low_in_stock": {
-      "one": "",
-      "other": ""
+      "one": "急いで、残り1つです！",
+      "other": "急いで、残り{{ count }}つです！"
     },
     "image_modal": "",
     "n_items_left": "",
