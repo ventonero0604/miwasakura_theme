@@ -71,7 +71,7 @@
           "type": "testimonial",
           "disabled": false,
           "settings": {
-            "image": "shopify://shop_images/img_appeal.png",
+            "image": "shopify://shop_images/31292275_s.jpg",
             "link": "",
             "icon": "none",
             "author-role": "",
@@ -83,7 +83,7 @@
           "type": "testimonial",
           "disabled": false,
           "settings": {
-            "image": null,
+            "image": "shopify://shop_images/31604061_s.jpg",
             "link": "",
             "icon": "none",
             "author-role": "",
@@ -95,7 +95,7 @@
           "type": "testimonial",
           "disabled": false,
           "settings": {
-            "image": null,
+            "image": "shopify://shop_images/31311651_s.jpg",
             "link": "",
             "icon": "none",
             "author-role": "",
@@ -107,7 +107,7 @@
           "type": "testimonial",
           "disabled": false,
           "settings": {
-            "image": null,
+            "image": "shopify://shop_images/31411067_s.jpg",
             "link": "",
             "icon": "none",
             "author-role": "",
@@ -117,7 +117,7 @@
         },
         "testimonial_KfnBi": {
           "type": "testimonial",
-          "disabled": false,
+          "disabled": true,
           "settings": {
             "image": null,
             "link": "",
