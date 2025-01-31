@@ -93,10 +93,10 @@
       "button": "コメントを送信",
       "email": "メール",
       "error": "すべてのフィールドが正しく入力されていません。",
-      "moderated_notice": "",
-      "moderated_feedback": "",
-      "name": "",
-      "success_feedback": ""
+      "moderated_notice": "すべてのコメントは公開前に承認されます。",
+      "moderated_feedback": "コメントありがとうございます。ブログの所有者によって承認されるまで表示されません。",
+      "name": "名前",
+      "success_feedback": "コメントありがとうございます。投稿されました。"
     },
     "filter": "",
     "no_articles": "",
