@@ -10,29 +10,29 @@
 {
   "sections": {
     "contact": {
-      "button": "",
-      "email": "",
-      "success_feedback_html": "",
-      "name": "",
-      "message": ""
+      "button": "送信",
+      "email": "メール",
+      "success_feedback_html": "お問い合わせいただきありがとうございます！できるだけ早くご連絡いたします。",
+      "name": "名前",
+      "message": "メッセージ"
     },
     "countdown": {
-      "day": "",
-      "hour": "",
-      "min": "",
-      "sec": ""
+      "day": "日",
+      "hour": "時",
+      "min": "分",
+      "sec": "秒"
     },
     "featured_collection": {
-      "skip_link": ""
+      "skip_link": "カルーセルをスキップ"
     },
     "featured_blog": {
-      "continue_reading": "",
-      "date": "",
-      "excerpt": "",
-      "item_title": ""
+      "continue_reading": "続きを読む",
+      "date": "2時間前",
+      "excerpt": "ここに記事の抜粋が表示されます。",
+      "item_title": "ブログ投稿"
     },
     "header": {
-      "empty_page_content": ""
+      "empty_page_content": "まだページがリンクされていません。"
     },
     "image_comparison": {
       "cursor": ""
