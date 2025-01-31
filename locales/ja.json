@@ -266,10 +266,10 @@
       "language": "言語の選択"
     },
     "mailing_list": {
-      "email": "",
-      "submit": "",
-      "placeholder": "",
-      "success_message": ""
+      "email": "メール",
+      "submit": "送信",
+      "placeholder": "メールアドレス",
+      "success_message": "サインアップありがとうございます！"
     },
     "pagination": {
       "first": "",
