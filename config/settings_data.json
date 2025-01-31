@@ -23,7 +23,7 @@
     "typography--section--mobile-size": 25,
     "typography--block--size": 20,
     "typography--block--mobile-size": 18,
-    "typography--accent": "shippori_mincho_n4",
+    "typography--accent": "noto_sans_japanese_n4",
     "typography--accent--size": 12,
     "typography--nav--uppercase": true,
     "typography--sub-nav--size": 11,
