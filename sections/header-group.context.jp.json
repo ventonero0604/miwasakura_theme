@@ -31,6 +31,15 @@
         "transparent-enabled": true
       },
       "blocks": {}
+    },
+    "split-announcements": {
+      "settings": {
+        "background-color": "accent-2",
+        "home-page-only": false,
+        "top-border": false,
+        "white-text": false
+      },
+      "blocks": {}
     }
   }
 }

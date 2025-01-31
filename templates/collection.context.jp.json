@@ -1,1 +1,71 @@
-{"parent":"collection.json","context":{"market":"jp"},"sections":{"collection-header":{"disabled":false,"settings":{"mobile-aspect-ratio":130,"overlay-style":"darken","mobile-spacing-below":"half","heading-type":"banner-heading","spacing-below":"none","spacing-above":"none","show-title":true,"show-image":false},"blocks":{}},"header-promo":{"disabled":true,"settings":{},"blocks":{}},"main":{"settings":{"products-per-row--desktop":3},"blocks":{"grid-promo-1":{"disabled":true,"settings":{"position":1}}}},"recent-products":{"disabled":true,"settings":{},"blocks":{}},"footer-promo":{"settings":{"image":"shopify:\/\/shop_images\/2.png","overline":"","title":"","description":""},"blocks":{}}}}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "collection.json",
+  "context": {
+    "market": "jp"
+  },
+  "sections": {
+    "collection-header": {
+      "disabled": false,
+      "custom_css": [
+        "h1 {font-size:28 px;margin-top:20px; color:#919191 }"
+      ],
+      "settings": {
+        "spacing-above": "full",
+        "spacing-below": "full",
+        "show-title": true,
+        "heading-type": "banner-heading",
+        "show-image": false,
+        "mobile-aspect-ratio": 130,
+        "overlay-style": "darken",
+        "mobile-spacing-below": "half",
+        "white-text": false,
+        "show-description": true,
+        "description-alignment": "with-title",
+        "heading-alignment": "center",
+        "aspect-ratio": 56
+      },
+      "blocks": {}
+    },
+    "header-promo": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "main": {
+      "settings": {
+        "products-per-row--desktop": 3
+      },
+      "blocks": {
+        "grid-promo-1": {
+          "disabled": true,
+          "settings": {
+            "position": 1
+          }
+        }
+      }
+    },
+    "recent-products": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "footer-promo": {
+      "settings": {
+        "image": "shopify://shop_images/2.png",
+        "overline": "",
+        "title": "",
+        "description": ""
+      },
+      "blocks": {}
+    }
+  }
+}
