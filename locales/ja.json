@@ -272,26 +272,26 @@
       "success_message": "サインアップありがとうございます！"
     },
     "pagination": {
-      "first": "",
-      "last": "",
-      "next": "",
-      "of": "",
-      "previous": ""
+      "first": "最初",
+      "last": "最後",
+      "next": "次へ",
+      "of": "の",
+      "previous": "前へ"
     },
     "search": {
-      "blog": "",
-      "cancel": "",
-      "collections": "",
-      "clear": "",
-      "filter_feedback": "",
-      "no_results": "",
-      "placeholder": "",
-      "pages": "",
-      "products": "",
-      "queries": "",
-      "search": "",
-      "search_again": "",
-      "view_all": ""
+      "blog": "ブログ",
+      "cancel": "キャンセル",
+      "collections": "コレクション",
+      "clear": "クリア",
+      "filter_feedback": "このフィルターに一致する商品はありません。",
+      "no_results": "結果が見つかりませんでした",
+      "placeholder": "ここで検索...",
+      "pages": "ページ",
+      "products": "商品",
+      "queries": "提案",
+      "search": "検索",
+      "search_again": "再検索",
+      "view_all": "すべて表示"
     },
     "social": {
       "email": "",
