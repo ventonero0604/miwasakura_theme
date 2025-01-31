@@ -904,7 +904,7 @@
       "type": "image-with-text",
       "disabled": false,
       "custom_css": [
-        "h2 {color:#F4899B; letter-spacing: 0.1em;}"
+        "h2 {color:#F4899B; letter-spacing: 0.1em; margin-bottom: 1em;}"
       ],
       "settings": {
         "header-8cc5a49b2f7341e196141559b2d066a0": null,
@@ -955,7 +955,7 @@
       "type": "image-with-text",
       "disabled": false,
       "custom_css": [
-        "h2 {color:#F4899B; letter-spacing: 0.1em;}"
+        "h2 {color:#F4899B; letter-spacing: 0.1em; margin-bottom: 1em;}"
       ],
       "settings": {
         "header-12ace2a26631754d65a920cff774d372": null,
@@ -1006,7 +1006,7 @@
       "type": "image-with-text",
       "disabled": false,
       "custom_css": [
-        "h2 {color:#F4899B; letter-spacing: 0.1em;}"
+        "h2 {color:#F4899B; letter-spacing: 0.1em; margin-bottom: 1em;}"
       ],
       "settings": {
         "header-546ec0cd0afb47b2b4c9ca6781e996d3": null,
@@ -1057,7 +1057,7 @@
       "type": "image-with-text",
       "disabled": false,
       "custom_css": [
-        "h2 {color:#F4899B; letter-spacing: 0.1em;}"
+        "h2 {color:#F4899B; letter-spacing: 0.1em; margin-bottom: 1em;}"
       ],
       "settings": {
         "header-b5d4ada1aafe89e88cf9c6b56b0fca15": null,
@@ -1108,7 +1108,7 @@
       "type": "image-with-text",
       "disabled": false,
       "custom_css": [
-        "h2 {color:#F4899B; letter-spacing: 0.1em;}"
+        "h2 {color:#F4899B; letter-spacing: 0.1em; margin-bottom: 1em;}"
       ],
       "settings": {
         "header-3b8b9ad0b6029ceb5a3b926ceec402d1": null,
