@@ -41,13 +41,13 @@
       "open": "地図で開く"
     },
     "navigation": {
-      "browse": "",
-      "clear_all": "",
-      "large_layout": "",
-      "refine": "",
-      "results_for": "",
-      "small_layout": "",
-      "sort_by": ""
+      "browse": "閲覧",
+      "clear_all": "すべてクリア",
+      "large_layout": "大きな商品ビューに切り替え",
+      "refine": "絞り込む",
+      "results_for": "の結果",
+      "small_layout": "小さな商品ビューに切り替え",
+      "sort_by": "並び替え"
     },
     "onboarding": {
       "collection_title": "",
