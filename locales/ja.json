@@ -154,7 +154,14 @@
       "submit": "アカウントを有効化"
     },
     "addresses": {
-
+      "add_new": "新しい住所を追加",
+      "address1": "住所1",
+      "address2": "住所2",
+      "cancel": "キャンセル",
+      "company": "会社",
+      "city": "市",
+      "country": "国",
+  
     },
     "login": {
       "cancel": "キャンセル",
