@@ -247,10 +247,10 @@
       "products": "商品",
       "register": "登録"
     },
-    "browser_unsupported": "",
+    "browser_unsupported": "ブラウザがサポートされていません。更新するか、別のブラウザをお試しください",
     "consent_tracking": {
-      "accept": "",
-      "decline": ""
+      "accept": "受け入れる",
+      "decline": "拒否する"
     },
     "filter": {
       "apply": "",
