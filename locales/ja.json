@@ -50,18 +50,18 @@
       "sort_by": "並び替え"
     },
     "onboarding": {
-      "collection_title": "",
-      "compare_price": "",
-      "description": "",
-      "no_content": "",
-      "overline": "",
-      "price": "",
-      "product_title": "",
-      "vendor": ""
+      "collection_title": "コレクションタイトル",
+      "compare_price": "50.00",
+      "description": "商品説明",
+      "no_content": "このセクションには現在コンテンツが含まれていません。サイドバーを使用してこのセクションにコンテンツを追加してください。",
+      "overline": "オーバーライン",
+      "price": "34.99",
+      "product_title": "商品タイトル",
+      "vendor": "ベンダー"
     },
     "shop_the_look": {
-      "product_nav_dot": "",
-      "product_hotspot": ""
+      "product_nav_dot": "商品ナビゲーション",
+      "product_hotspot": "商品ホットスポット"
     }
   },
   "blog": {
