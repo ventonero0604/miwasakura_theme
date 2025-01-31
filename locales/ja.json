@@ -130,23 +130,23 @@
     "placeholder": {
       "collection_title": "コレクション名"
     },
-    "view_more": ""
+    "view_more": "もっと見る"
   },
   "customer": {
     "account": {
-      "date": "",
-      "fulfillment_status": "",
-      "no_orders": "",
-      "orders": "",
-      "order": "",
-      "page_title": "",
-      "payment_status": "",
-      "total": "",
-      "logout": "",
-      "view_addresses": ""
+      "date": "日付",
+      "fulfillment_status": "履行状況",
+      "no_orders": "まだ注文がありません。",
+      "orders": "注文",
+      "order": "注文",
+      "page_title": "マイアカウント",
+      "payment_status": "支払い状況",
+      "total": "合計",
+      "logout": "ログアウト",
+      "view_addresses": "住所を見る"
     },
     "activate_account": {
-      "cancel": "",
+      "cancel": "招待を辞退",
       "page_title": "",
       "password": "",
       "password_confirm": "",
