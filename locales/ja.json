@@ -106,9 +106,9 @@
     "rss": "RSS"
   },
   "cart": {
-    "all_items_added": "",
-    "checkout": "",
-    "empty_html": "",
+    "all_items_added": "すべてのアイテムがカートに追加されました。",
+    "checkout": "チェックアウト",
+    "empty_html": "<span data-item='rte-content'>カートは現在空です。<br/> <a href='{{ collections_url }}'>ショッピングを続けるにはここをクリック</a>。</span>",
     "minus": "",
     "order_notes": "",
     "plus": "",
