@@ -351,7 +351,7 @@
           "miwasakura720",
           "miwasakura720-3",
           "miwasakura-720b2",
-          "miwasakura_720b"
+          "miwasakura-720b"
         ],
         "heading": "Products",
         "link-url": "shopify://collections/all",
@@ -363,7 +363,7 @@
       "blocks": {
         "template--14898551390289__c990c808-20ee-417a-8211-74ae6de26bb0-hotspot-1": {
           "settings": {
-            "product": "miwasakura_720b"
+            "product": "miwasakura-720b"
           }
         },
         "template--14898551390289__c990c808-20ee-417a-8211-74ae6de26bb0-hotspot-2": {
