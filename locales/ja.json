@@ -35,10 +35,10 @@
       "empty_page_content": "まだページがリンクされていません。"
     },
     "image_comparison": {
-      "cursor": ""
+      "cursor": "カーソル"
     },
     "map": {
-      "open": ""
+      "open": "地図で開く"
     },
     "navigation": {
       "browse": "",
