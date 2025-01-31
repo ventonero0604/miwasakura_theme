@@ -87,12 +87,12 @@
           "other": "{{ count }}分前"
         }
       },
-      "written_by": ""
+      "written_by": "著者"
     },
     "comment": {
-      "button": "",
-      "email": "",
-      "error": "",
+      "button": "コメントを送信",
+      "email": "メール",
+      "error": "すべてのフィールドが正しく入力されていません。",
       "moderated_notice": "",
       "moderated_feedback": "",
       "name": "",
