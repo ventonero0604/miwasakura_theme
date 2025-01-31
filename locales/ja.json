@@ -98,12 +98,12 @@
       "name": "名前",
       "success_feedback": "コメントありがとうございます。投稿されました。"
     },
-    "filter": "",
-    "no_articles": "",
-    "placeholder_title": "",
-    "placeholder_timesince": "",
-    "placeholder_excerpt": "",
-    "rss": ""
+    "filter": "フィルター",
+    "no_articles": "記事が見つかりません。",
+    "placeholder_title": "注目の記事",
+    "placeholder_timesince": "2時間前",
+    "placeholder_excerpt": "ここに注目記事の抜粋が表示されます。",
+    "rss": "RSS"
   },
   "cart": {
     "all_items_added": "",
