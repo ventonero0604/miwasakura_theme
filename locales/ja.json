@@ -232,20 +232,20 @@
   },
   "general": {
     "a11y": {
-      "close": "",
-      "next": "",
-      "previous": "",
-      "skip_main": "",
-      "skip_pagination": ""
+      "close": "閉じる",
+      "next": "次へ",
+      "previous": "前へ",
+      "skip_main": "メインコンテンツへスキップ",
+      "skip_pagination": "ページネーションへスキップ"
     },
     "breadcrumbs": {
-      "account": "",
-      "activate_account": "",
-      "addresses": "",
-      "collections": "",
-      "home": "",
-      "products": "",
-      "register": ""
+      "account": "アカウント",
+      "activate_account": "アカウントを有効化",
+      "addresses": "住所",
+      "collections": "コレクション",
+      "home": "ホーム",
+      "products": "商品",
+      "register": "登録"
     },
     "browser_unsupported": "",
     "consent_tracking": {
