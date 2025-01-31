@@ -369,23 +369,23 @@
       "return": "商品に戻る",
       "view_store_info": "店舗情報を見る"
     },
-    "quick_add": "",
-    "sale": "",
-    "size_chart": "",
-    "size_chart_path": "",
-    "sku": "",
+    "quick_add": "クイック追加",
+    "sale": "セール",
+    "size_chart": "サイズチャート",
+    "size_chart_path": "商品ページ > バリアントピッカー",
+    "sku": "SKU",
     "sold_out": {
-      "signed_up_html": "",
-      "email_placeholder": "",
-      "email_description": "",
-      "email_invalid": "",
-      "button": ""
+      "signed_up_html": "在庫が入荷したらお知らせします",
+      "email_placeholder": "あなたのメールアドレス",
+      "email_description": "在庫が戻ったらお知らせください",
+      "email_invalid": "有効なメールアドレスを入力してください",
+      "button": "送信"
     },
-    "star_reviews_info": "",
-    "tax_included": "",
-    "total_reviews": "",
-    "unavailable": "",
-    "unavailable_notice": "",
-    "view_ar": ""
+    "star_reviews_info": "{{ rating_value }} / {{ rating_max }} 星",
+    "tax_included": "税込み。",
+    "total_reviews": "総レビュー数",
+    "unavailable": "利用不可",
+    "unavailable_notice": "この商品が利用可能になったら通知してください",
+    "view_ar": "あなたのスペースで見る"
   }
 }
