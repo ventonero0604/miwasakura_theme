@@ -123,12 +123,12 @@
     "your_cart": "あなたのカート"
   },
   "collections": {
-    "browse": "",
-    "continue_shopping": "",
-    "filter_feedback": "",
-    "no_products_feedback": "",
+    "browse": "コレクションを閲覧",
+    "continue_shopping": "ショッピングを続ける",
+    "filter_feedback": "このフィルターに一致する商品はありません。",
+    "no_products_feedback": "このコレクションには商品がありません。",
     "placeholder": {
-      "collection_title": ""
+      "collection_title": "コレクション名"
     },
     "view_more": ""
   },
