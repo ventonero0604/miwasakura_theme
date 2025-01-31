@@ -968,7 +968,7 @@
       "type": "image-with-text",
       "disabled": false,
       "custom_css": [
-        "h2 {color: #f4899b; letter-spacing: 0.1em; margin-bottom: 1em;}"
+        "h2 {color: #A6845C; letter-spacing: 0.1em; margin-bottom: 1em;}"
       ],
       "settings": {
         "header-a4a03f19b53b71e80cea83b1dad0645c": null,
