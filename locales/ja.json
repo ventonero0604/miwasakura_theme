@@ -224,10 +224,10 @@
       "submit": "サインアップ"
     },
     "reset_password": {
-      "page_title": "",
-      "password": "",
-      "password_confirmation": "",
-      "submit": ""
+      "page_title": "パスワードをリセット",
+      "password": "パスワード",
+      "password_confirmation": "パスワードの確認",
+      "submit": "パスワードをリセット"
     }
   },
   "general": {
