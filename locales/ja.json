@@ -65,18 +65,18 @@
     }
   },
   "blog": {
-    "all": "すべて",
+    "all": "",
     "article": {
-      "comment": "コメント",
-      "comments": "コメント",
-      "continue_reading": "続きを読む",
-      "featured": "注目",
-      "no_comments": "最初にコメントを残してください。",
-      "tagged_in": "タグ付け",
+      "comment": "",
+      "comments": "",
+      "continue_reading": "",
+      "featured": "",
+      "no_comments": "",
+      "tagged_in": "",
       "time_since_posted": {
         "days": {
-          "one": "1日前",
-          "other": "{{ count }}時間前"
+          "one": "",
+          "other": ""
         },
         "hours": {
           "one": "",
