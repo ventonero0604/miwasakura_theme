@@ -65,7 +65,7 @@
     }
   },
   "blog": {
-    "all": "全てを表示",
+    "all": "",
     "article": {
       "comment": "",
       "comments": "",
@@ -98,10 +98,10 @@
       "name": "",
       "success_feedback": ""
     },
-    "filter": "フィルター",
-    "no_articles": "記事がありません",
-    "placeholder_title": "仮のタイトル",
-    "placeholder_timesince": "公開時間",
+    "filter": "",
+    "no_articles": "",
+    "placeholder_title": "",
+    "placeholder_timesince": "",
     "placeholder_excerpt": "",
     "rss": ""
   },
