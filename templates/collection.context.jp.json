@@ -23,15 +23,15 @@
         "spacing-below": "full",
         "show-title": true,
         "heading-type": "banner-heading",
-        "show-image": false,
-        "mobile-aspect-ratio": 130,
-        "overlay-style": "darken",
-        "mobile-spacing-below": "half",
-        "white-text": false,
+        "heading-alignment": "center",
         "show-description": true,
         "description-alignment": "with-title",
-        "heading-alignment": "center",
-        "aspect-ratio": 56
+        "white-text": false,
+        "show-image": false,
+        "aspect-ratio": 56,
+        "mobile-aspect-ratio": 130,
+        "overlay-style": "darken",
+        "mobile-spacing-below": "half"
       },
       "blocks": {}
     },
@@ -64,6 +64,13 @@
         "overline": "",
         "title": "",
         "description": ""
+      },
+      "blocks": {}
+    },
+    "navigation": {
+      "settings": {
+        "swatches": "circle",
+        "spacing-above": "none"
       },
       "blocks": {}
     }
