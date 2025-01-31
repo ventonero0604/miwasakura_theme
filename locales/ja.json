@@ -65,10 +65,10 @@
     }
   },
   "blog": {
-    "all": "",
+    "all": "すべて",
     "article": {
-      "comment": "",
-      "comments": "",
+      "comment": "コメント",
+      "comments": "コメント",
       "continue_reading": "",
       "featured": "",
       "no_comments": "",
