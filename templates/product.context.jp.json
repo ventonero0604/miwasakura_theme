@@ -1070,7 +1070,7 @@
       "type": "image-with-text",
       "disabled": false,
       "custom_css": [
-        "h2 {color: #f4899b; letter-spacing: 0.1em; margin-bottom: 1em;}"
+        "h2 {color: #A6845C; letter-spacing: 0.1em; margin-bottom: 1em;}"
       ],
       "settings": {
         "header-8b0cc9fda05c303433953501936a5d7a": null,
@@ -1097,7 +1097,7 @@
         "header-645bb963f50187c887a8b97238b052c8": null,
         "image": "shopify://shop_images/img_2.png",
         "overline": "",
-        "title": "めくって楽しむ二層式ラベル",
+        "title": "化けの皮をはがす",
         "highlight-type": "italic",
         "highlight-color": "#ffdd66",
         "highlight-text": "#000000",
