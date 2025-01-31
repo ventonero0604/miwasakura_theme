@@ -72,18 +72,18 @@
       "continue_reading": "続きを読む",
       "featured": "注目",
       "no_comments": "最初にコメントを残してください。",
-      "tagged_in": "",
+      "tagged_in": "タグ付け",
       "time_since_posted": {
         "days": {
-          "one": "",
+          "one": "1日前",
           "other": ""
         },
         "hours": {
-          "one": "",
+          "one": "1時間前",
           "other": ""
         },
         "minutes": {
-          "one": "",
+          "one": "1分前",
           "other": ""
         }
       },
