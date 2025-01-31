@@ -129,7 +129,7 @@
         },
         "testimonial_XXWX3": {
           "type": "testimonial",
-          "disabled": false,
+          "disabled": true,
           "settings": {
             "image": null,
             "link": "",
