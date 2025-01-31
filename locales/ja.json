@@ -322,14 +322,14 @@
       "title": "こちらが{{ shop }}の{{ value }}ギフトカードです！"
     },
     "header": {
-      "account_view_link": "",
-      "back": "",
-      "cart": "",
-      "search": "",
-      "toggle_drawer": ""
+      "account_view_link": "アカウント",
+      "back": "戻る",
+      "cart": "カート",
+      "search": "検索",
+      "toggle_drawer": "ドロワーを切り替え"
     },
     "footer": {
-      "navigation": ""
+      "navigation": "ナビゲーション"
     },
     "password": {
       "login_link": "",
