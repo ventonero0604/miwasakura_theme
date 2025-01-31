@@ -147,11 +147,11 @@
     },
     "activate_account": {
       "cancel": "招待を辞退",
-      "page_title": "",
-      "password": "",
-      "password_confirm": "",
-      "subtext": "",
-      "submit": ""
+      "page_title": "アカウントを有効化",
+      "password": "パスワード",
+      "password_confirm": "パスワードを確認",
+      "subtext": "パスワードを作成してアカウントを有効化します。",
+      "submit": "アカウントを有効化"
     },
     "addresses": {
       "add_new": "",
