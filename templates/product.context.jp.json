@@ -1121,7 +1121,7 @@
       "type": "image-with-text",
       "disabled": false,
       "custom_css": [
-        "h2 {color: #f4899b; letter-spacing: 0.1em; margin-bottom: 1em;}"
+        "h2 {color: #A6845C; letter-spacing: 0.1em; margin-bottom: 1em;}"
       ],
       "settings": {
         "header-c3181cb33e4fbeae7279a91d9336ecd5": null,
@@ -1148,7 +1148,7 @@
         "header-62d5728880215ab3c61bd7512b3fe0f4": null,
         "image": "shopify://shop_images/img_3.png",
         "overline": "",
-        "title": "上質な酔ゑ体験をあなたに",
+        "title": "若い世代に純米酒で酔う事の価値を届けたい",
         "highlight-type": "italic",
         "highlight-color": "#ffdd66",
         "highlight-text": "#000000",
