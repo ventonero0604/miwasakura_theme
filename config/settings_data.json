@@ -11,6 +11,7 @@
   "current": {
     "color--accent-1": "#f4899b",
     "color--accent-2": "#f2b6be",
+    "color--body": "#222222",
     "bg-color--button": "#ff0000",
     "typography--heading": "noto_sans_japanese_n2",
     "typography--heading--spacing": -2,
@@ -23,7 +24,7 @@
     "typography--section--mobile-size": 25,
     "typography--block--size": 20,
     "typography--block--mobile-size": 18,
-    "typography--accent": "noto_sans_japanese_n4",
+    "typography--accent": "shippori_mincho_n4",
     "typography--accent--size": 12,
     "typography--nav--uppercase": true,
     "typography--sub-nav--size": 11,
