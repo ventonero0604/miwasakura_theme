@@ -76,15 +76,15 @@
       "time_since_posted": {
         "days": {
           "one": "1日前",
-          "other": ""
+          "other": "{{ count }}日前"
         },
         "hours": {
           "one": "1時間前",
-          "other": ""
+          "other": "{{ count }}時間前"
         },
         "minutes": {
           "one": "1分前",
-          "other": ""
+          "other": "{{ count }}分前"
         }
       },
       "written_by": ""
