@@ -382,7 +382,7 @@
       "button": "送信"
     },
     "star_reviews_info": "{{ rating_value }} / {{ rating_max }} 星",
-    "tax_included": "税込み。",
+    "tax_included": "税込",
     "total_reviews": "総レビュー数",
     "unavailable": "利用不可",
     "unavailable_notice": "この商品が利用可能になったら通知してください",
