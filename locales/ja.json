@@ -332,14 +332,14 @@
       "navigation": "ナビゲーション"
     },
     "password": {
-      "login_link": "",
-      "login_title": "",
-      "login_button": "",
-      "login_cancel": "",
-      "powered_by_shopify_html": "",
-      "shopify_info": "",
-      "sub_title": "",
-      "title": ""
+      "login_link": "ログイン",
+      "login_title": "パスワードを使用してストアに入る",
+      "login_button": "入る",
+      "login_cancel": "戻る",
+      "powered_by_shopify_html": "このショップは{{ shopify }}によって運営されます",
+      "shopify_info": "Shopifyで自分のオンラインストアを作成する",
+      "sub_title": "これは訪問者へのメッセージです。管理画面で編集できます",
+      "title": "近日公開"
     }
   },
   "products": {
