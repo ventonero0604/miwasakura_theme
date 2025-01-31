@@ -7,4 +7,385 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{}
+{
+  "sections": {
+    "contact": {
+      "button": "",
+      "email": "",
+      "success_feedback_html": "",
+      "name": "",
+      "message": ""
+    },
+    "countdown": {
+      "day": "",
+      "hour": "",
+      "min": "",
+      "sec": ""
+    },
+    "featured_collection": {
+      "skip_link": ""
+    },
+    "featured_blog": {
+      "continue_reading": "",
+      "date": "",
+      "excerpt": "",
+      "item_title": ""
+    },
+    "header": {
+      "empty_page_content": ""
+    },
+    "image_comparison": {
+      "cursor": ""
+    },
+    "map": {
+      "open": ""
+    },
+    "navigation": {
+      "browse": "",
+      "clear_all": "",
+      "large_layout": "",
+      "refine": "",
+      "results_for": "",
+      "small_layout": "",
+      "sort_by": ""
+    },
+    "onboarding": {
+      "collection_title": "",
+      "compare_price": "",
+      "description": "",
+      "no_content": "",
+      "overline": "",
+      "price": "",
+      "product_title": "",
+      "vendor": ""
+    },
+    "shop_the_look": {
+      "product_nav_dot": "",
+      "product_hotspot": ""
+    }
+  },
+  "blog": {
+    "all": "全てを表示",
+    "article": {
+      "comment": "",
+      "comments": "",
+      "continue_reading": "",
+      "featured": "",
+      "no_comments": "",
+      "tagged_in": "",
+      "time_since_posted": {
+        "days": {
+          "one": "",
+          "other": ""
+        },
+        "hours": {
+          "one": "",
+          "other": ""
+        },
+        "minutes": {
+          "one": "",
+          "other": ""
+        }
+      },
+      "written_by": ""
+    },
+    "comment": {
+      "button": "",
+      "email": "",
+      "error": "",
+      "moderated_notice": "",
+      "moderated_feedback": "",
+      "name": "",
+      "success_feedback": ""
+    },
+    "filter": "フィルター",
+    "no_articles": "記事がありません",
+    "placeholder_title": "仮のタイトル",
+    "placeholder_timesince": "公開時間",
+    "placeholder_excerpt": "",
+    "rss": ""
+  },
+  "cart": {
+    "all_items_added": "",
+    "checkout": "",
+    "empty_html": "",
+    "minus": "",
+    "order_notes": "",
+    "plus": "",
+    "price": "",
+    "quantity": "",
+    "remove": "",
+    "shipping_taxes_not_included": "",
+    "shipping_taxes_included": "",
+    "subtotal": "",
+    "title": "",
+    "total": "",
+    "your_cart": ""
+  },
+  "collections": {
+    "browse": "",
+    "continue_shopping": "",
+    "filter_feedback": "",
+    "no_products_feedback": "",
+    "placeholder": {
+      "collection_title": ""
+    },
+    "view_more": ""
+  },
+  "customer": {
+    "account": {
+      "date": "",
+      "fulfillment_status": "",
+      "no_orders": "",
+      "orders": "",
+      "order": "",
+      "page_title": "",
+      "payment_status": "",
+      "total": "",
+      "logout": "",
+      "view_addresses": ""
+    },
+    "activate_account": {
+      "cancel": "",
+      "page_title": "",
+      "password": "",
+      "password_confirm": "",
+      "subtext": "",
+      "submit": ""
+    },
+    "addresses": {
+      "add_new": "",
+      "address1": "",
+      "address2": "",
+      "cancel": "",
+      "company": "",
+      "city": "",
+      "country": "",
+      "default": "",
+      "delete": "",
+      "edit": "",
+      "first_name": "",
+      "last_name": "",
+      "page_title": "",
+      "province": "",
+      "phone": "",
+      "set_default": "",
+      "update": "",
+      "zip": ""
+    },
+    "login": {
+      "cancel": "",
+      "email": "",
+      "forgot_password": "",
+      "guest_title": "",
+      "guest_continue": "",
+      "new_account": "",
+      "page_title": "",
+      "password": "",
+      "reset_password": "",
+      "reset_instructions_html": "",
+      "submit": "",
+      "sign_in": ""
+    },
+    "order": {
+      "abandoned": "",
+      "authorized": "",
+      "billing_address": "",
+      "cancelled": "",
+      "discount": "",
+      "fulfilled": "",
+      "fulfilled_at": "",
+      "fulfillment_status": "",
+      "item": "",
+      "page_title": "",
+      "paid": "",
+      "payment_status": "",
+      "pending": "",
+      "price": "",
+      "quantity": "",
+      "sku": "",
+      "shipping_address": "",
+      "subtotal": "",
+      "refunded": "",
+      "total": "",
+      "track_shipment": "",
+      "tracking_company": "",
+      "tracking_number": "",
+      "unfulfilled": "",
+      "voided": ""
+    },
+    "register": {
+      "email": "",
+      "first_name": "",
+      "last_name": "",
+      "login": "",
+      "page_title": "",
+      "password": "",
+      "submit": ""
+    },
+    "reset_password": {
+      "page_title": "",
+      "password": "",
+      "password_confirmation": "",
+      "submit": ""
+    }
+  },
+  "general": {
+    "a11y": {
+      "close": "",
+      "next": "",
+      "previous": "",
+      "skip_main": "",
+      "skip_pagination": ""
+    },
+    "breadcrumbs": {
+      "account": "",
+      "activate_account": "",
+      "addresses": "",
+      "collections": "",
+      "home": "",
+      "products": "",
+      "register": ""
+    },
+    "browser_unsupported": "",
+    "consent_tracking": {
+      "accept": "",
+      "decline": ""
+    },
+    "filter": {
+      "apply": "",
+      "from": "",
+      "no_filters": "",
+      "reset": "",
+      "search_by_name": "",
+      "sort_by": "",
+      "to": ""
+    },
+    "localization": {
+      "region": "",
+      "language": ""
+    },
+    "mailing_list": {
+      "email": "",
+      "submit": "",
+      "placeholder": "",
+      "success_message": ""
+    },
+    "pagination": {
+      "first": "",
+      "last": "",
+      "next": "",
+      "of": "",
+      "previous": ""
+    },
+    "search": {
+      "blog": "",
+      "cancel": "",
+      "collections": "",
+      "clear": "",
+      "filter_feedback": "",
+      "no_results": "",
+      "placeholder": "",
+      "pages": "",
+      "products": "",
+      "queries": "",
+      "search": "",
+      "search_again": "",
+      "view_all": ""
+    },
+    "social": {
+      "email": "",
+      "copied": "",
+      "facebook": "",
+      "pinterest": "",
+      "share": "",
+      "x": "",
+      "url": ""
+    },
+    "404": {
+      "intro": "",
+      "home_page_link": "",
+      "page_title": "",
+      "products_link": "",
+      "return_links_html": ""
+    }
+  },
+  "layout": {
+    "gift_card": {
+      "active": "",
+      "disabled": "",
+      "expired": "",
+      "print": "",
+      "redeem": "",
+      "shop_link": "",
+      "subtext": "",
+      "title": ""
+    },
+    "header": {
+      "account_view_link": "",
+      "back": "",
+      "cart": "",
+      "search": "",
+      "toggle_drawer": ""
+    },
+    "footer": {
+      "navigation": ""
+    },
+    "password": {
+      "login_link": "",
+      "login_title": "",
+      "login_button": "",
+      "login_cancel": "",
+      "powered_by_shopify_html": "",
+      "shopify_info": "",
+      "sub_title": "",
+      "title": ""
+    }
+  },
+  "products": {
+    "add_to_cart": "",
+    "change": "",
+    "choose_options": "",
+    "empty_page_content_html": "",
+    "from": "",
+    "low_in_stock": {
+      "one": "",
+      "other": ""
+    },
+    "image_modal": "",
+    "n_items_left": "",
+    "new": "",
+    "no_items_left": "",
+    "off": "",
+    "one_item_left": "",
+    "out_of_stock": "",
+    "pickup": {
+      "other_pickup_locations": "",
+      "map": "",
+      "available": "",
+      "available_at_html": "",
+      "unavailable": "",
+      "unavailable_at_html": "",
+      "return": "",
+      "view_store_info": ""
+    },
+    "quick_add": "",
+    "sale": "",
+    "size_chart": "",
+    "size_chart_path": "",
+    "sku": "",
+    "sold_out": {
+      "signed_up_html": "",
+      "email_placeholder": "",
+      "email_description": "",
+      "email_invalid": "",
+      "button": ""
+    },
+    "star_reviews_info": "",
+    "tax_included": "",
+    "total_reviews": "",
+    "unavailable": "",
+    "unavailable_notice": "",
+    "view_ar": ""
+  }
+}
