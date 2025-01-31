@@ -164,7 +164,8 @@
       "default": "(デフォルトの住所)",
       "delete": "削除",
       "edit": "編集",
-
+      "first_name": "名",
+      "last_name": "姓",
       "page_title": "あなたの住所",
       "province": "州",
       "phone": "電話",
@@ -215,12 +216,12 @@
     },
     "register": {
       "email": "メール",
-      "first_name": "",
-      "last_name": "",
-      "login": "",
-      "page_title": "",
-      "password": "",
-      "submit": ""
+      "first_name": "名",
+      "last_name": "姓",
+      "login": "ログイン",
+      "page_title": "アカウントを作成",
+      "password": "パスワード",
+      "submit": "サインアップ"
     },
     "reset_password": {
       "page_title": "",
