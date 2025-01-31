@@ -161,7 +161,10 @@
       "company": "会社",
       "city": "市",
       "country": "国",
-     
+      "default": "(デフォルトの住所)",
+      "delete": "削除",
+      "edit": "編集",
+
       "page_title": "あなたの住所",
       "province": "州",
       "phone": "電話",
