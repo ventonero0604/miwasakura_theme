@@ -29,7 +29,8 @@
         "4bbc4d2e-97a8-4d59-87f2-9195c41265ab": {
           "disabled": false,
           "settings": {
-            "newsletter--info": "<p>純米酒 みわさくらのキャンペーン、セールの最新情報をいち早く受け取ろう！</p>"
+            "newsletter--info": "<p>純米酒 みわさくらのキャンペーン、セールの最新情報をいち早く受け取ろう！</p>",
+            "newsletter--heading": "ニュースレター"
           }
         }
       }
