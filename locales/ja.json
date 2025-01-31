@@ -312,14 +312,14 @@
   },
   "layout": {
     "gift_card": {
-      "active": "",
-      "disabled": "",
-      "expired": "",
-      "print": "",
-      "redeem": "",
-      "shop_link": "",
-      "subtext": "",
-      "title": ""
+      "active": "{{ expiry }}に有効期限が切れます",
+      "disabled": "無効",
+      "expired": "{{ expiry }}に有効期限が切れました",
+      "print": "印刷",
+      "redeem": "このコードをチェックアウト時に使用してギフトカードを引き換えてください",
+      "shop_link": "ショッピングを始める",
+      "subtext": "こちらがあなたのギフトカードです！",
+      "title": "こちらが{{ shop }}の{{ value }}ギフトカードです！"
     },
     "header": {
       "account_view_link": "",
