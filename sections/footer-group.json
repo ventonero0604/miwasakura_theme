@@ -40,6 +40,7 @@
         },
         "4bbc4d2e-97a8-4d59-87f2-9195c41265ab": {
           "type": "subscribe",
+          "disabled": true,
           "settings": {
             "newsletter--heading": "Newsletter",
             "newsletter--info": "<p>Be the first to receive updates on new arrivals, special promos and sales.</p>",
