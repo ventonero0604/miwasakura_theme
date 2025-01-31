@@ -69,9 +69,9 @@
     "article": {
       "comment": "コメント",
       "comments": "コメント",
-      "continue_reading": "",
-      "featured": "",
-      "no_comments": "",
+      "continue_reading": "続きを読む",
+      "featured": "注目",
+      "no_comments": "最初にコメントを残してください。",
       "tagged_in": "",
       "time_since_posted": {
         "days": {
