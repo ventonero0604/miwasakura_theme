@@ -161,7 +161,13 @@
       "company": "会社",
       "city": "市",
       "country": "国",
-  
+     
+      "page_title": "あなたの住所",
+      "province": "州",
+      "phone": "電話",
+      "set_default": "デフォルトの住所に設定",
+      "update": "住所を更新",
+      "zip": "郵便番号"
     },
     "login": {
       "cancel": "キャンセル",
