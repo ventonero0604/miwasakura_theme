@@ -95,12 +95,12 @@
           "type": "testimonial",
           "disabled": false,
           "settings": {
-            "image": "shopify://shop_images/31311651_s.jpg",
+            "image": null,
             "link": "",
-            "icon": "none",
+            "icon": "10",
             "author-role": "",
-            "author-name": "",
-            "description": "<p>★★★★★</p><p>初めての日本酒でみわさくらを飲みました。とても甘くて飲みやすかったです！</p>"
+            "author-name": "Takahasi2412",
+            "description": "<p>初めての日本酒でみわさくらを飲みました。とても甘くて飲みやすかったです！</p>"
           }
         },
         "testimonial_ghran": {
