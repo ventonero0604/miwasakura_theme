@@ -12,5 +12,38 @@
   "context": {
     "market": "jp"
   },
-  "sections": {}
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {}
+    },
+    "16324378141979f11c": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "1632180071f18cee62": {
+      "settings": {
+        "store-hours": "<p>受付時間<br/><br/>月曜日- 金曜日<br/>10:00-17:00</p>",
+        "heading": "",
+        "store-address": ""
+      },
+      "blocks": {}
+    },
+    "1632436597fbc1d0e4": {
+      "settings": {
+        "image-display-type": "small",
+        "white-text": true,
+        "overlap": false,
+        "container-width": "2",
+        "top-border": false,
+        "spacing-below": "half",
+        "background-color": "none",
+        "title": "お問い合わせ",
+        "image": "shopify://shop_images/img.png"
+      },
+      "blocks": {}
+    }
+  }
 }
