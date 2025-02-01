@@ -11,7 +11,7 @@
   "current": {
     "color--accent-1": "#f4899b",
     "color--accent-2": "#f2b6be",
-    "color--body": "#484848",
+    "color--body": "#3b3b3b",
     "bg-color--button": "#ff0000",
     "typography--heading": "noto_sans_japanese_n3",
     "typography--heading--spacing": 1,
