@@ -75,7 +75,7 @@
             "link": "",
             "icon": "10",
             "author-role": "",
-            "author-name": "rina.m",
+            "author-name": "",
             "description": "<p>みわさくら、飲ませていただきました！<br/>可愛いキャラクターのボトルでしたが、しっかりとした日本酒でした！！<br/>すっきりと飲みやすく、ひとりで一本空けてしまいました（笑）<br/>ある意味危険なお酒です。</p>"
           }
         },
@@ -99,7 +99,7 @@
             "link": "",
             "icon": "10",
             "author-role": "",
-            "author-name": "Takahasi2412",
+            "author-name": "rina.m",
             "description": "<p>初めての日本酒でみわさくらを飲みました。とても甘くて飲みやすかったです！</p>"
           }
         },
@@ -107,12 +107,12 @@
           "type": "testimonial",
           "disabled": false,
           "settings": {
-            "image": "shopify://shop_images/31411067_s.jpg",
+            "image": null,
             "link": "",
-            "icon": "none",
+            "icon": "6",
             "author-role": "",
             "author-name": "",
-            "description": "<p>★★★</p><p>紙屋町のイベントで、はじめてみわさくらを試飲させていただきました。日本酒といえばキツイイメージがあったけど、すっきりと飲める印象です。オススメのぬる燗も試してみたいと思います。</p>"
+            "description": "<p>紙屋町のイベントで、はじめてみわさくらを試飲させていただきました。日本酒といえばキツイイメージがあったけど、すっきりと飲める印象です。オススメのぬる燗も試してみたいと思います。</p>"
           }
         },
         "testimonial_KfnBi": {
