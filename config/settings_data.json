@@ -91,6 +91,11 @@
         "type": "shopify://apps/age-verification-popup/blocks/omg-app-age/92f920f4-d437-4eb4-9aab-e091741a3ce4",
         "disabled": true,
         "settings": {}
+      },
+      "557738680160292817": {
+        "type": "shopify://apps/mf-age/blocks/age/5f8595dd-e9ee-49e4-95a8-82b5fae7b7c3",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
