@@ -83,12 +83,12 @@
           "type": "testimonial",
           "disabled": false,
           "settings": {
-            "image": "shopify://shop_images/31604061_s.jpg",
+            "image": null,
             "link": "",
-            "icon": "none",
+            "icon": "10",
             "author-role": "",
-            "author-name": "",
-            "description": "<p>★★★★★</p><p>癖がなくて飲みやすい！<br/>日本酒が苦手な方でも飲みやすいと思います。<br/>ラベルも可愛いので女性の部屋でも違和感なく置けます。</p>"
+            "author-name": "まゆみ",
+            "description": "<p>癖がなくて飲みやすい！<br/>日本酒が苦手な方でも飲みやすいと思います。<br/>ラベルも可愛いので女性の部屋でも違和感なく置けます。</p>"
           }
         },
         "testimonial_3Akt7": {
