@@ -27,7 +27,9 @@
       "settings": {
         "heading": "",
         "store-address": "",
-        "store-hours": "<p>お問い合わせ 受付時間<br/><br/>月曜日- 金曜日<br/>10:00-17:00</p>"
+        "store-hours": "<p>お問い合わせ 受付時間<br/><br/>月曜日- 金曜日<br/>10:00-17:00</p>",
+        "heading-alignment": "center",
+        "container-width": "3"
       },
       "blocks": {}
     },
