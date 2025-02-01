@@ -18,6 +18,21 @@
       "settings": {
         "background-color": "accent-1"
       },
+      "blocks": {
+        "announcement_hq8R4N": {
+          "settings": {
+            "text": "カートシステムをリニューアルしました。"
+          }
+        }
+      }
+    },
+    "split-announcements": {
+      "settings": {
+        "home-page-only": false,
+        "top-border": false,
+        "background-color": "accent-2",
+        "white-text": false
+      },
       "blocks": {}
     },
     "header": {
@@ -29,15 +44,6 @@
         "logo": "shopify://shop_images/RackMultipart20240509-18110-1o7usai.png",
         "logo-height": 65,
         "transparent-enabled": true
-      },
-      "blocks": {}
-    },
-    "split-announcements": {
-      "settings": {
-        "background-color": "accent-2",
-        "home-page-only": false,
-        "top-border": false,
-        "white-text": false
       },
       "blocks": {}
     }
