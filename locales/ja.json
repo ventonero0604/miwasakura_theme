@@ -116,7 +116,7 @@
     "quantity": "数量",
     "remove": "削除",
     "shipping_taxes_not_included": "税金と送料はチェックアウト時に計算されます",
-    "shipping_taxes_included": "税込/送料は次ページで計算されます",
+    "shipping_taxes_included": "送料は次のページで計算されます",
     "subtotal": "小計",
     "title": "カート",
     "total": "合計",
