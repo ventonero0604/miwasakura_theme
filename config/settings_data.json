@@ -57,7 +57,7 @@
     "favicon": "shopify://shop_images/RackMultipart20240509-18110-1o7usai.jpg",
     "cart--type": "drawer",
     "cart--show-note": true,
-    "cart--shipping-limit": "11000",
+    "cart--shipping-limit": "7500",
     "cart--shipping-before": "あと [amount] 円で送料無料になります。",
     "cart--shipping-after": "送料無料の対象になりました。",
     "social--hover-color": "opacity",
