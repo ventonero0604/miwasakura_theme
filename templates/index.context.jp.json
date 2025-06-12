@@ -19,7 +19,7 @@
         "top-border": false,
         "spacing-above": "full",
         "spacing-below": "full",
-        "background-color": "none",
+        "background-color": "#FFD9E0",
         "white-text": false,
         "text-alignment": "center",
         "heading-type": "block-heading",
