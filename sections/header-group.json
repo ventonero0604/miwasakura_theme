@@ -40,7 +40,7 @@
       "settings": {
         "sticky-enabled": true,
         "top-border": false,
-        "background-color": "accent-2",
+        "background-color": "accent-1",
         "white-text": true,
         "arrows-enabled": true,
         "rotate-frequency": 7,
