@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "送料無料キャンペーン中！",
+            "text": "テスト",
             "link": "",
             "hide-on-desktop": false,
             "hide-on-mobile": false,
