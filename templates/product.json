@@ -425,6 +425,7 @@
     },
     "custom_content_AJhLxe": {
       "type": "custom-content",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": "full",
