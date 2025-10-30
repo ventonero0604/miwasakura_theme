@@ -19,7 +19,7 @@
           "settings": {
             "icon": "none",
             "text": "LUCKY KILIMANJARO コラボ商品 11月16日(日)発売！",
-            "link": "",
+            "link": "https://miwasakura.me/products/luckykilimanjaro",
             "hide-on-desktop": false,
             "hide-on-mobile": false,
             "page-enabled": false,
@@ -37,7 +37,6 @@
       "block_order": [
         "announcement_hq8R4N"
       ],
-      "disabled": true,
       "settings": {
         "sticky-enabled": true,
         "top-border": false,
