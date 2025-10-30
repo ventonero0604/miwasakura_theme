@@ -99,7 +99,7 @@
       },
       "10956367205460302357": {
         "type": "shopify://apps/ur-age-verification-checkbox/blocks/head--age-confirmation/ad3c484e-4c9d-41e0-830a-6b3ff732c8a4",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "product_list": [
             "luckykilimanjaro",
