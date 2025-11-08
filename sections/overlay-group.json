@@ -116,7 +116,7 @@
       "type": "age-verification",
       "disabled": true,
       "settings": {
-        "background-color": "accent-1",
+        "background-color": "light",
         "translucent": true,
         "white-text": true,
         "heading": "Confirm your age",
