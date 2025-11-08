@@ -38,7 +38,7 @@
           "type": "buy-buttons",
           "settings": {
             "smart-payment-enabled": true,
-            "sticky-add-enabled": false
+            "sticky-add-enabled": true
           }
         },
         "pickup": {
