@@ -154,41 +154,6 @@
         "type": "shopify://apps/blockify-age-verification/blocks/omg-app-age/92f920f4-d437-4eb4-9aab-e091741a3ce4",
         "disabled": true,
         "settings": {}
-      },
-      "10956367205460302357": {
-        "type": "shopify://apps/ur-age-verification-checkbox/blocks/head--age-confirmation/ad3c484e-4c9d-41e0-830a-6b3ff732c8a4",
-        "disabled": true,
-        "settings": {
-          "product_list": [
-            "luckykilimanjaro",
-            "miwasakura720",
-            "miwasakura-720b",
-            "miwasakura-720b2",
-            "miwasakura720-3",
-            "nonbe-2",
-            "nonbe-1",
-            "ochoko-set"
-          ],
-          "show_age_confirmation_message": true,
-          "age_message_heading": "■年齢確認にご協力ください | Please confirm your age",
-          "age_message_body": "<p>※20歳未満の飲酒は法律で禁止されています。<br/>※20歳未満に対してのお酒の販売はいたしません。<br/><br/>Note: Drinking under the age of 20 is prohibited by law.<br/>We do not sell alcohol to persons under the age of 20.</p>",
-          "age_message_title_color": "#333333",
-          "age_message_body_color": "#333333",
-          "age_message_title_font_size": 12,
-          "age_message_title_margin_top": 0,
-          "age_message_title_margin_bottom": 8,
-          "age_message_body_font_size": 12,
-          "age_message_body_margin_top": 4,
-          "age_message_body_margin_bottom": 0,
-          "checkbox_text": "<p>20歳以上の方はチェックをいれてください。<br/>Please check the box if you are 20 years or older.</p>",
-          "checkbox_property_label": "年齢確認 | age verification",
-          "checkbox_text_color": "#333333",
-          "checkbox_text_font_size": 12,
-          "margin_top": 12,
-          "margin_bottom": 12,
-          "alert_text": "20歳以上の方はチェックをいれてください。| Please check the box if you are 20 years or older.",
-          "liquid": ""
-        }
       }
     }
   },

@@ -111,26 +111,9 @@
       "settings": {
         "limit": true
       }
-    },
-    "age-verification": {
-      "type": "age-verification",
-      "disabled": true,
-      "settings": {
-        "background-color": "light",
-        "translucent": true,
-        "white-text": true,
-        "heading": "Confirm your age",
-        "description": "<p>Are you 18 years old or older?</p>",
-        "decline-text": "No I'm not",
-        "approve-text": "Yes I am",
-        "declined-heading": "Come back when you're older",
-        "declined-description": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.</p>",
-        "return-text": "Oops, I entered incorrectly"
-      }
     }
   },
   "order": [
-    "popup",
-    "age-verification"
+    "popup"
   ]
 }
