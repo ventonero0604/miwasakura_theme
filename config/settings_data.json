@@ -73,9 +73,72 @@
     "search-enabled": true,
     "content_for_index": [],
     "blocks": {
+      "674449006196788022": {
+        "type": "shopify://apps/cc-yes-no/blocks/cc-age-check/8a5448e4-4319-4cf0-849f-52fa9e9bd406",
+        "disabled": true,
+        "settings": {
+          "testmode": false,
+          "bgcolor": "#F4FCFF",
+          "textcolor": "#2D2D2D",
+          "check-age": "20",
+          "modal-main-title": "年齢確認",
+          "modal-sub-title": "年齢が20歳未満の方はサイトをご使用いただけません。誕生日を入力しておすすみください。",
+          "year": "年",
+          "month": "月",
+          "day": "日",
+          "input-select": "ymd",
+          "checkbox-text": "年齢確認に同意します。提供された情報が正確であることを保証し、このサイトにアクセスする資格があることを確認します。",
+          "under-age-text": "制限年齢を満たしておりません。",
+          "over-age-text": "年齢の承認を完了しました。",
+          "btn-text": "承認",
+          "noentry-btn-text": "このサイトから離れる",
+          "btn-bgcolor": "#0962B6",
+          "btn-textcolor": "#fff"
+        }
+      },
+      "5798894059797779569": {
+        "type": "shopify://apps/cc-yes-no/blocks/cc-age-check-yn/8a5448e4-4319-4cf0-849f-52fa9e9bd406",
+        "disabled": true,
+        "settings": {
+          "testmode": false,
+          "bgcolor": "#F4FCFF",
+          "textcolor": "#2D2D2D",
+          "modal-main-title": "年齢認証",
+          "modal-sub-title": "年齢制限があります。18歳以下の方のアクセスを制限しています。",
+          "desc-text": "このサイトにアクセスする権限のある年齢です。",
+          "btn-text": "YES",
+          "noentry-btn-text": "NO",
+          "btn-bgcolor": "#0962B6",
+          "btn-textcolor": "#fff"
+        }
+      },
+      "11184890595602834579": {
+        "type": "shopify://apps/cc-yes-no/blocks/cc-age-check-age/8a5448e4-4319-4cf0-849f-52fa9e9bd406",
+        "disabled": true,
+        "settings": {
+          "testmode": false,
+          "bgcolor": "#F4FCFF",
+          "textcolor": "#2D2D2D",
+          "check-age": "20",
+          "modal-main-title": "年齢確認",
+          "modal-sub-title": "年齢を入力してください。このサイトにアクセスする権限のある年齢であることを承認します。",
+          "desc-text": "このサイトにアクセスする権限のある年齢です。",
+          "age-input": "年齢",
+          "under-age-text": "制限年齢を満たしていないか、入力が間違っている可能性があります。",
+          "btn-text": "承認",
+          "noentry-btn-text": "このサイトから離れる",
+          "btn-bgcolor": "#0962B6",
+          "btn-textcolor": "#fff"
+        }
+      },
+      "557738680160292817": {
+        "type": "shopify://apps/mf-age/blocks/age/5f8595dd-e9ee-49e4-95a8-82b5fae7b7c3",
+        "disabled": false,
+        "settings": {}
+      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "button_color": "#ac0000",
           "secondary_color": "#ffffff",
@@ -88,18 +151,13 @@
         }
       },
       "10560697916000961394": {
-        "type": "shopify://apps/age-verification-popup/blocks/omg-app-age/92f920f4-d437-4eb4-9aab-e091741a3ce4",
+        "type": "shopify://apps/blockify-age-verification/blocks/omg-app-age/92f920f4-d437-4eb4-9aab-e091741a3ce4",
         "disabled": true,
-        "settings": {}
-      },
-      "557738680160292817": {
-        "type": "shopify://apps/mf-age/blocks/age/5f8595dd-e9ee-49e4-95a8-82b5fae7b7c3",
-        "disabled": false,
         "settings": {}
       },
       "10956367205460302357": {
         "type": "shopify://apps/ur-age-verification-checkbox/blocks/head--age-confirmation/ad3c484e-4c9d-41e0-830a-6b3ff732c8a4",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "product_list": [
             "luckykilimanjaro",
