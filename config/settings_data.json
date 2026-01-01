@@ -73,11 +73,6 @@
     "search-enabled": true,
     "content_for_index": [],
     "blocks": {
-      "557738680160292817": {
-        "type": "shopify://apps/mf-age/blocks/age/5f8595dd-e9ee-49e4-95a8-82b5fae7b7c3",
-        "disabled": false,
-        "settings": {}
-      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": true,
@@ -91,6 +86,11 @@
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
+      },
+      "557738680160292817": {
+        "type": "shopify://apps/mf-age/blocks/age/5f8595dd-e9ee-49e4-95a8-82b5fae7b7c3",
+        "disabled": true,
+        "settings": {}
       }
     }
   },
