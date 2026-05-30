@@ -34,26 +34,18 @@
             "page-enabled": false,
             "page-url": "",
             "header-6e306aa4082ea134abb0c74a4ba216ed": null,
-            "countdown-enabled": true,
+            "countdown-enabled": false,
             "timer-bg-color": "dark",
-            "light-number": true,
+            "light-number": false,
             "expiry-date": "DD-MM-YYYY",
             "expiry-hours": 0,
             "expiry-minutes": 0,
-            "hide-when-expired": true
-          }
-        },
-        "announcement_hq8R4N": {
-          "settings": {
-            "icon": "none",
-            "text": "可部 噂通りの大文字祭 POP UP STORE開催！",
-            "link": ""
+            "hide-when-expired": false
           }
         }
       },
       "block_order": [
-        "announcement_69cEQ",
-        "announcement_hq8R4N"
+        "announcement_69cEQ"
       ]
     },
     "split-announcements": {
