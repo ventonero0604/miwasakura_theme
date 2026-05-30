@@ -19,14 +19,42 @@
         "background-color": "accent-1"
       },
       "blocks": {
+        "announcement_69cEQ": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "header-c7bfc68213f836cba1d3c35f0783d507": null,
+            "icon": "none",
+            "icon-image": null,
+            "text": "Announcement for sales, promos & more",
+            "link": "",
+            "header-a5758e6017324648ad00505c0e556aa2": null,
+            "hide-on-desktop": false,
+            "hide-on-mobile": false,
+            "page-enabled": false,
+            "page-url": "",
+            "header-6e306aa4082ea134abb0c74a4ba216ed": null,
+            "countdown-enabled": true,
+            "timer-bg-color": "dark",
+            "light-number": true,
+            "expiry-date": "DD-MM-YYYY",
+            "expiry-hours": 0,
+            "expiry-minutes": 0,
+            "hide-when-expired": true
+          }
+        },
         "announcement_hq8R4N": {
           "settings": {
-            "text": "LUCKY KILIMANJARO コラボ商品 11月16日(日)発売！",
-            "link": "https://miwasakura.me/products/luckykilimanjaro",
-            "icon": "check-fat"
+            "icon": "check-fat",
+            "text": "可部 噂通りの大文字祭 POP UP STORE開催！",
+            "link": "https://miwasakura.me/products/luckykilimanjaro"
           }
         }
-      }
+      },
+      "block_order": [
+        "announcement_69cEQ",
+        "announcement_hq8R4N"
+      ]
     },
     "split-announcements": {
       "settings": {
